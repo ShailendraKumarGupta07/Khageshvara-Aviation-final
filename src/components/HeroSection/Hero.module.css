@@ -1,0 +1,57 @@
+.wrapper{
+    height: 100dvh;
+    width: 100vw;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+.bgImage{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+.content{
+    position: absolute;
+    height: 100dvh;
+    width: 100vw;
+    z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 5rem;
+}
+.textSection{
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: flightFont;
+}
+.bigTextWrapper{
+    font-size: 5rem;
+}
+.bigTextWrapper span{
+    color: rgb(252, 185, 0);
+}
+.smallTextWrapper{
+    font-size: 1.5rem;
+}
+.smallTextWrapper span{
+    color: rgb(252, 185, 0);
+}
+.btn{
+    background: linear-gradient(rgba(0, 0, 0, 0.7) 0%, rgb(10, 10, 10) 100%);
+    border-radius: 32px;
+    color: white;
+    border: none;
+    padding-inline: 4rem;
+    padding-block: 0.7rem;
+    font-size: 1.8rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 200;
+}

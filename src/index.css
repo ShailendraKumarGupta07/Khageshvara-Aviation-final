@@ -1,0 +1,20 @@
+@font-face {
+  font-family: FuturaStdHeavy;
+  src: url('./assets/fonts/Futura\ Std\ Heavy.otf');
+}
+@font-face {
+  font-family: beadFont;
+  src: url('./assets/fonts/KingthingsPoppalok-6xjo.ttf');
+}
+@font-face {
+  font-family: flightFont;
+  src: url('./assets/fonts/SingleDay-Regular.ttf');
+}
+@font-face {
+  font-family: flightFont2;
+  src: url('./assets/fonts/CallEight-Regular\ Regular.otf');
+}
+@font-face {
+  font-family: futuraBook;
+  src: url('./assets/fonts/Futura\ Std\ Book.otf');
+}
