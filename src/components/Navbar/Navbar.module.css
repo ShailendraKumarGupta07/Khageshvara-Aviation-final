@@ -1,55 +1,51 @@
-nav{
-    background-color: rgba(255, 255, 255, 0.2);
-    height: 75px;
-    width: 100vw;
-    display: flex;
+nav {
+  background-color: rgba(255, 255, 255, 0.2);
+  height: 75px;
+  width: 100vw;
+  display: flex;
   align-items: center;
   justify-content: space-between;
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 2;
+  z-index: 1;
 }
-.imageLogoContainer{
-    width: 20%;
+.imageLogoContainer {
+  width: 33%;
   height: 100%;
   display: flex;
   align-items: center;
 }
-.imageLogoContainer img{
-    width: 75px;
-    height: auto;
-    margin-left: 2rem;
+.imageLogoContainer img {
+  width: 75px;
+  height: auto;
+  margin-left: 2rem;
 }
-.list{
-    display: flex;
-  width: 30%;
+.list {
+  display: flex;
+  width: 33%;
   height: 100%;
   align-items: center;
   justify-content: space-evenly;
 }
-.listElement{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: color 0.5s;
+.listElement {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.5s;
 }
-.listElement:hover{
-    cursor: pointer;
-    color: rgb(252, 185, 0);
+.listElement:hover {
+  cursor: pointer;
+  color: rgb(252, 185, 0);
 }
-.name{
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: -1;
-    font-family: FuturaStdHeavy;
-    font-size: 1rem;
-    font-weight: 600;
-    letter-spacing: 3px;
+.name {
+  width: 33%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: -1;
+  font-family: FuturaStdHeavy;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 3px;
 }

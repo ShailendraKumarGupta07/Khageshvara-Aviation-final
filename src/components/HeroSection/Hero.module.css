@@ -5,7 +5,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 1;
 }
 .bgImage{
     position: absolute;
@@ -18,7 +17,6 @@
     position: absolute;
     height: 100dvh;
     width: 100vw;
-    z-index: 2;
   display: flex;
   justify-content: center;
   align-items: center;
