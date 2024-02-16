@@ -50,3 +50,28 @@ nav {
   font-weight: 600;
   letter-spacing: 5px;
 }
+
+@media screen and (max-width: 768px) {
+  .imageLogoContainer img {
+    width: 50px;
+  }
+  .list {
+    width: 50%;
+  }
+  .name {
+    display: none;
+  }
+
+  nav {
+    flex-direction: column;
+  }
+
+  .list {
+    width: 100%;
+    gap: 1rem;
+  }
+
+  .imageLogoContainer {
+    margin: 5px;
+  }
+}

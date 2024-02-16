@@ -63,3 +63,35 @@
   height: auto;
   min-width: 600px;
 }
+
+@media screen and (max-width: 768px) {
+  .pageWrapper {
+    gap: 1rem;
+  }
+  .heading {
+    font-size: 3rem;
+  }
+  .content {
+    flex-direction: column;
+    gap: 2rem;
+    padding-inline: 0;
+  }
+  .planeImage > img {
+    width: 80vw;
+    min-width: 300px;
+  }
+  .textContent {
+    padding-inline: 0;
+  }
+  .textHeading {
+    font-size: 2rem;
+  }
+  .textPara {
+    max-width: 300px;
+    min-width: 250px;
+  }
+  .bottomImage > img {
+    width: 80vw;
+    min-width: 300px;
+  }
+}
