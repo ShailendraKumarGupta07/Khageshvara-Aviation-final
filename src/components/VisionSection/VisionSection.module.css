@@ -1,64 +1,65 @@
-.pageWrapper{
-    height: 100dvh;
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    gap: 2rem;
-    align-items: center;
-    position: relative;
+.pageWrapper {
+  height: 100dvh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 2rem;
+  align-items: center;
+  position: relative;
 }
-.heading{
-    font-family: flightFont;
-    font-size: 5rem;
-    margin-top: 2rem;
+.heading {
+  font-family: flight;
+  font-size: 5rem;
+  margin-top: 2rem;
 }
-.heading span{
-    color: rgb(252, 185, 0);
+.heading span {
+  color: rgb(252, 185, 0);
 }
-.content{
-    display: flex;
-    justify-content: space-between;
-    padding-inline:2rem;
-    align-items: center;
-    min-height: 60dvh;
-    height: auto;
-    min-width: 80%;
-    width: auto;
+.content {
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 2rem;
+  align-items: center;
+  min-height: 60dvh;
+  height: auto;
+  min-width: 80%;
+  width: auto;
 }
-.planeImage>img{
-    width: 40vw;
-    min-width: 500px;
-    height: auto;
+.planeImage > img {
+  width: 40vw;
+  min-width: 500px;
+  height: auto;
 }
-.textContent{
-    padding-inline: 2rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    gap: 1rem;
+.textContent {
+  padding-inline: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 1rem;
 }
-.textHeading{
-    font-size: 2rem;
-    color: rgb(252, 185, 0);
+.textHeading {
+  font-family: flight;
+  font-size: 4rem;
+  color: rgb(252, 185, 0);
 }
-.textPara{
-    max-width: 400px;
-    line-height: 1.75em;
-    font-family: FuturaStdHeavy;
-    min-width: 350px;
+.textPara {
+  max-width: 400px;
+  line-height: 1.75em;
+  font-family: futura;
+  min-width: 350px;
 }
-.bottomImage{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    display: flex;
-    justify-content: center;
-    width: 100vw;
+.bottomImage {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  width: 100vw;
 }
-.bottomImage>img{
-    width: 60vw;
-    height: auto;
-    min-width: 600px;
+.bottomImage > img {
+  width: 60vw;
+  height: auto;
+  min-width: 600px;
 }

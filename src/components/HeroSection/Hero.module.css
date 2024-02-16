@@ -1,73 +1,64 @@
-.wrapper{
-    height: 100dvh;
-    width: 100vw;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.wrapper {
+  height: 100dvh;
+  width: 100vw;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.bgImage{
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
+
+.bgImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
 }
-.content{
-    position: absolute;
-    height: 100dvh;
-    width: 100vw;
+
+.content {
+  position: absolute;
+  height: 100dvh;
+  width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   gap: 5rem;
 }
-.textSection{
-    display: flex;
+
+.textSection {
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-family: flightFont;
-  animation: floatAnimation 0.8s infinite ease-in-out alternate;
+  font-family: flight;
 }
-.bigTextWrapper{
-    font-size: 5rem;
+
+.bigTextWrapper {
+  font-size: 6rem;
 }
-.bigTextWrapper span{
-    color: rgb(252, 185, 0);
+
+.bigTextWrapper span {
+  color: rgb(252, 185, 0);
 }
-.smallTextWrapper{
-    font-size: 1.5rem;
+
+.smallTextWrapper {
+  font-size: 1.2rem;
+  font-family: futura;
 }
-.smallTextWrapper span{
-    color: rgb(252, 185, 0);
+.smallTextWrapper span {
+  color: rgb(252, 185, 0);
 }
-.btn{
-    background: linear-gradient(rgba(0, 0, 0, 0.7) 0%, rgb(10, 10, 10) 100%);
-    border-radius: 32px;
-    color: white;
-    border: none;
-    padding-inline: 4rem;
-    padding-block: 0.7rem;
-    font-size: 1.8rem;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-weight: 200;
-    animation: floatAnimation2 1s infinite ease-in-out alternate;
+.btn {
+  background: linear-gradient(rgba(0, 0, 0, 0.7) 0%, rgb(10, 10, 10) 100%);
+  border-radius: 32px;
+  color: white;
+  border: none;
+  padding-inline: 2rem;
+  padding-block: 0.7rem;
+  font-size: 1.2rem;
+  font-family: futura;
+  font-weight: 200;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
 }
-  @keyframes floatAnimation {
-    0% {
-      transform: translateY(0);
-    }
-    100% {
-      transform: translateY(-10px);
-    }
-  }
-  @keyframes floatAnimation2 {
-    0% {
-      transform: translateX(5px);
-    }
-    100% {
-      transform: translateX(-5px);
-    }
-  }
