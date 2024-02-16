@@ -62,3 +62,23 @@
   text-transform: uppercase;
   letter-spacing: 0.1rem;
 }
+
+@media screen and (max-width: 768px) {
+  .bigTextWrapper {
+    font-size: 4rem;
+    text-align: center;
+  }
+  .smallTextWrapper {
+    text-align: center;
+    font-size: 1rem;
+    width: 80%;
+  }
+  .btn {
+    padding-inline: 1.5rem;
+    padding-block: 0.5rem;
+    font-size: 1rem;
+  }
+  .bgImage {
+    object-fit: cover;
+  }
+}
