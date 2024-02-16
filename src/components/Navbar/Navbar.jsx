@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import styles from "./Navbar.module.css";
+
 const Navbar = () => {
   return (
     <>
