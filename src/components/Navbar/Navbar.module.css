@@ -29,16 +29,19 @@ nav {
   align-items: center;
   justify-content: space-evenly;
 }
+
 .listElement {
   display: flex;
   align-items: center;
   justify-content: center;
   transition: color 0.5s;
 }
+
 .listElement:hover {
   cursor: pointer;
   color: rgb(252, 185, 0);
 }
+
 .name {
   width: 33%;
   display: flex;

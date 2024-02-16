@@ -1,12 +1,13 @@
 import React from "react";
-import { useState } from "react";
 import styles from "./Navbar.module.css";
+import logo from "../../assets/khageshvaraImageLogo.svg";
+
 const Navbar = () => {
   return (
     <>
       <nav>
         <div className={styles.imageLogoContainer}>
-          <img src="src/assets/khageshvaraImageLogo.svg" alt="Logo" />
+          <img src={logo} alt="Logo" />
         </div>
         <div className={styles.name}>KAGHESHVARA</div>
 
