@@ -1,17 +1,18 @@
 .pageWrapper {
-  min-height: 100vh;
+  height: 100dvh;
   width: 100vw;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  gap: 2rem;
   align-items: center;
   position: relative;
+  text-align: center  ;
 }
 .heading {
-  font-family: flight;
-  font-size: 5rem;
+  font-family: Elianto-Regular;
+  font-size: 4.2rem;
   margin-top: 2rem;
+  word-spacing: -15px;
 }
 .heading span {
   color: rgb(252, 185, 0);
@@ -30,6 +31,17 @@
   width: 40vw;
   min-width: 500px;
   height: auto;
+  animation-name: move;
+  animation-duration: 0.4s;
+}
+
+@keyframes  move{
+  0%{
+    transform: translateX(-100%);
+  }
+  100%{
+    transform: translateX(0);
+  }
 }
 .textContent {
   padding-inline: 2rem;
@@ -40,59 +52,131 @@
   gap: 1rem;
 }
 .textHeading {
-  font-family: flight;
-  font-size: 4rem;
+  font-family: Elianto-Regular;
+  font-size: 2.3rem;
   color: rgb(252, 185, 0);
+  text-align: justify;
+  word-spacing: -10px;
 }
 .textPara {
-  max-width: 400px;
-  line-height: 1.75em;
-  font-family: futura;
-  min-width: 350px;
+  max-width: 500px;
+  line-height: 1.5em;
+  font-family: Elianto-Regular;
+  text-align: justify;
+  min-width: 400px;
+  word-spacing: -0.5%;
 }
 .bottomImage {
-  position: absolute;
-  bottom: 0;
-  left: 0;
+  position: relative ;
   display: flex;
   justify-content: center;
+  align-items: center;
   width: 100vw;
+  top: -8%;
+  border-bottom: 2px solid #d9d9d9;
 }
 .bottomImage > img {
   width: 60vw;
   height: auto;
   min-width: 600px;
+  /* position: absolute; */
 }
 
-@media screen and (max-width: 768px) {
-  .pageWrapper {
-    gap: 1rem;
+/* Media Queries starts here  */
+@media screen and (max-width:1400px) and (min-width:1200px) {
+  .heading{
+    font-size:3.5rem ;
   }
-  .heading {
-    font-size: 3rem;
-  }
-  .content {
-    flex-direction: column;
-    gap: 2rem;
-    padding-inline: 0;
-  }
-  .planeImage > img {
-    width: 80vw;
-    min-width: 300px;
-  }
-  .textContent {
-    padding-inline: 0;
-  }
-  .textHeading {
+  .textHeading{
     font-size: 2rem;
   }
-  .textPara {
-    max-width: 300px;
-    min-width: 250px;
+}
+@media screen and (max-width:1200px) and (min-width:1000px) {
+  .heading{
+    font-size:3.25rem ;
   }
-
+  .textHeading{
+    font-size: 1.5rem;
+  }
+  .textContent p{
+    font-size: 1rem;
+  }
+  .planeImage > img {
+    width: 50vw;
+    min-width: 300px;
+  }
+}
+@media screen and (max-width:1000px) and (min-width:800px) {
+  
+  .heading{
+    font-size:3.5rem ;
+  }
+  .textHeading{
+    font-size: 2rem;
+  }
+  .planeImage > img {
+    width: 70vw;
+    min-width: 300px;
+  }
+  .pageWrapper{
+    gap: 2rem;
+    height: 100%;
+  }
+  .content{
+    flex-direction: column;
+  }
+  .bottomImage{
+    top: 0;
+  }
+}
+@media screen and (max-width:800px) and (min-width:600px){
+  .heading{
+    font-size:3.5rem ;
+  }
+  .textHeading{
+    font-size: 1.75rem;
+  }
+  .planeImage > img {
+    width: 70vw;
+    min-width: 300px;
+  }
+  .pageWrapper{
+    gap: 1.75rem;
+    height: 100%;
+  }
+  .content{
+    flex-direction: column;
+  }
+  .bottomImage{
+    top: 0;
+  }
+}
+@media screen and (max-width:600px) and (min-width:500px){
+  .heading{
+    font-size:3rem ;
+  }
+  .textHeading{
+    font-size: 1.5rem;
+  }
+  .planeImage > img {
+    width: 70vw;
+    min-width: 300px;
+  }
+  .pageWrapper{
+    gap: 1.75rem;
+    height: 100%;
+  }
+  .content{
+    flex-direction: column;
+  }
+  .textContent{
+    font-size: 0.9rem;
+    padding-inline: 1rem;
+  }
   .bottomImage {
     position: relative;
+    top:0;
+    width: 100%;
   }
 
   .bottomImage > img {
@@ -100,3 +184,143 @@
     min-width: 300px;
   }
 }
+@media screen and (max-width:500px) and (min-width:480px){
+  .heading{
+    font-size:2.5rem ;
+    word-spacing: -0.75rem;
+  }
+  .textHeading{
+    font-size: 1.25rem;
+    word-spacing: -0.3rem;
+  }
+  .planeImage > img {
+    width: 70vw;
+    min-width: 300px;
+  }
+  .pageWrapper{
+    gap: 1.5rem;
+    height: 100%;
+  }
+  .content{
+    flex-direction: column;
+    padding: 1rem;
+  }
+  .textContent{
+    font-size: 0.7rem;
+    padding-inline: 1rem;
+  }
+  .bottomImage {
+    position: relative;
+    top:0;
+    width: 100%;
+  }
+
+  .bottomImage > img {
+    width: 80vw;
+    min-width: 300px;
+  }
+}
+@media screen and (max-width:480px) and (min-width:400px){
+  .heading{
+    font-size:2rem ;
+    word-spacing: -0.6rem;
+  }
+  .textHeading{
+    font-size: 1.3rem;
+    word-spacing: -0.3rem;
+  }
+  .planeImage > img {
+    width: 70vw;
+    min-width: 300px;
+  }
+  .pageWrapper{
+    gap: 1.5rem;
+    height: 100%;
+  }
+  .content{
+    flex-direction: column;
+  }
+  .textContent{
+    font-size: 0.6rem;
+    gap: 0.5rem;
+    padding-inline: 0rem;
+  }
+  .bottomImage {
+    position: relative;
+    top:0;
+    width: 100%;
+  }
+
+  .bottomImage > img {
+    width: 70vw;
+    min-width: 350px;
+  }
+  .textPara {
+    max-width: 300px;
+    min-width: 250px;
+  }
+}
+@media screen and (max-width:400px) and (min-width:300px){
+  .heading{
+    font-size:2rem ;
+    word-spacing: -0.5rem;
+  }
+  .textHeading{
+    font-size: 1.3rem;
+    word-spacing: -0.3rem;
+  }
+  .planeImage{
+    position: relative;
+    top: 10%;
+  }
+  .planeImage > img {
+    width: 70vw;
+    min-width: 300px;
+  }
+  .pageWrapper{
+    gap: 1rem;
+    height: 100%;
+  }
+  .content{
+    flex-direction: column;
+    gap: 0.5rem;
+    padding-inline: 0.75rem;
+  }
+  .textContent{
+    font-size: 0.6rem;
+    gap: 0rem;
+    padding-inline: 0rem;
+  }
+  .bottomImage {
+    position: relative;
+    top:0;
+    width: 100%;
+  }
+
+  .bottomImage > img {
+    width: 60vw;
+    min-width: 350px;
+    min-height: 100px;
+  }
+  .textPara {
+    text-wrap: wrap;
+    max-width: 400px;
+    min-width: 250px;
+    height: 100px;
+  }
+}
+@media screen and (max-width:350px) and (min-width:325px){
+  .bottomImage > img {
+    width: 60vw;
+    min-width: 300px;
+    min-height: 50px;
+  }
+}
+@media screen and (max-width:325px) and (min-width:300px){
+  .bottomImage > img {
+    width: 60vw;
+    min-width: 275px;
+    min-height: 50px;
+  }
+}
+

@@ -1,4 +1,24 @@
-nav {
+*{
+  -webkit-user-select: none;
+  user-select: none;
+}
+.active{
+  top: 0;
+  transition: top 0.5s ease-in-out; 
+}
+.hidden{
+  top: -100px;
+  transition: top 0.5s ease-in-out;
+}
+.active1{
+  top: 0;
+  transition: top 0.5s ease-in-out; 
+}
+.hidden1{
+  top: -100px;
+  transition: top 0.5s ease-in-out;
+}
+nav{
   background-color: rgba(255, 255, 255, 0.2);
   height: 75px;
   width: 100vw;
@@ -23,7 +43,7 @@ nav {
 }
 .list {
   display: flex;
-  font-family: futura;
+  font-family: Elianto-Regular;
   width: 33%;
   height: 100%;
   align-items: center;
@@ -48,27 +68,92 @@ nav {
   justify-content: center;
   align-items: center;
   z-index: -1;
-  font-family: futura;
-  font-size: 0.7rem;
-  font-weight: 600;
+  font-family: Elianto-Regular;
+  font-size: 0.9rem;
+  font-weight: bold;
   letter-spacing: 5px;
 }
+.name a{
+  text-decoration: none;
+  color: black;
+}
+.name:hover{
+  text-decoration: underline;
+}
 
-@media screen and (max-width: 768px) {
+.dropdown {
+  position: absolute;
+  z-index: 9999;
+  top: 100%; 
+  left: 0;
+  width: 100vw; 
+  height: auto;
+  background-color: rgb(255, 255, 255);
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  flex-direction: column;
+  gap: 20px;
+  padding: 50px;
+  font-family: Elianto-Regular;
+  font-size: 0.9rem;
+  font-weight: bold;
+  letter-spacing: 5px;
+  
+}
+.dropdownElement {
+  padding: 10px; 
+  cursor: pointer; 
+  z-index: 5;
+}
+.dropdownElement:hover {
+  color: rgb(252, 185, 0);
+}
+
+/* Hamburger */
+@media screen and (min-width:1024px ){
+  .hamburger{
+    display: none;
+    position: fixed;
+  }
+}
+@media screen and (max-width:1024px ){
+  .list{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1024px) and (min-width:280px ){
+  nav{
+    justify-content: space-between;
+  }
+  .name{
+    text-align: center;
+    margin-right: 20%;
+    display: none;
+    
+  }
+}
+@media screen and (max-width: 768px) and (min-width:320px ){
+  nav{
+    padding: 5px;
+  }
   .imageLogoContainer img {
     width: 50px;
+  }
+}
+
+@media screen and (max-width: 385px) {
+  .imageLogoContainer img {
+    width: 50px;
+    margin-left: 1rem;
   }
   .list {
     width: 50%;
   }
-  .name {
-    display: none;
-  }
-
-  nav {
-    flex-direction: column;
-  }
-
   .list {
     width: 100%;
     gap: 1rem;
@@ -77,4 +162,9 @@ nav {
   .imageLogoContainer {
     margin: 5px;
   }
+  .dropdown{
+    gap: 10px;
+    padding: 20px;
+  }
 }
+

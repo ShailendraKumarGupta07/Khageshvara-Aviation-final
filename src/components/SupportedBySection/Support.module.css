@@ -1,0 +1,132 @@
+.contentwrapper{
+    height: 100%;
+    width: 100vw;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin: 3% 0 3% 0;
+}
+.supportedby, .Grantsby{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 1rem;
+    text-align: center;
+    font-family: Elianto-Regular;
+    font-size: 1.16rem;
+}
+.supportorg, .grantsorg{
+    display: flex;
+    height: 102px;
+    width: 100vw;
+    justify-content: center;
+    gap: 30px;
+    position: relative;
+    flex-wrap: nowrap;
+    align-items: center;
+    object-position: center;
+}
+.grantsorg{
+    gap: 250px;
+}
+.supportedby img, .Grantsby img{
+    object-fit: scale-down;
+    width: 9vw;
+    height: 102px;
+    image-rendering: auto;
+    
+}
+
+
+/* Media Queries  */
+
+@media screen and (max-width: 1000px) and (min-width:750px ){
+    .supportedby, .Grantsby{
+        font-size: 1rem;
+    }
+    .grantsorg{
+        gap: 150px;
+    }
+}
+@media screen and (max-width: 750px) and (min-width:600px ){
+    .supportedby, .Grantsby{
+        font-size: 1rem;
+    }
+    .grantsorg{
+        gap: 100px;
+    }
+    .supportorg{
+        gap: 20px;
+    }
+    .supportedby img, .Grantsby img{
+        object-fit: scale-down;
+        width: 4.5em;
+        height: 90px;
+        image-rendering: auto;
+        
+    }
+}
+
+@media screen and (max-width: 600px) and (min-width:400px ){
+    .contentwrapper{
+        gap: 1em;
+    }
+    .supportedby, .Grantsby{
+        font-size: 1rem;
+    }
+    .grantsorg{
+        flex-direction: column;
+        padding: 30px;
+        gap: 6px;
+        height: 100%;
+    }
+    .supportorg{
+        display: grid;
+        padding: 30px;
+        grid-template-columns: 0.5fr 0.5fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 6px;
+        height: 100%;
+    }
+    .supportedby img, .Grantsby img{
+        object-fit: scale-down;
+        width: 9em;
+        height: 102px;
+        image-rendering: auto;      
+    }
+}
+@media screen and (max-width: 400px) and (min-width:300px ){
+    .contentwrapper{
+        gap: 1em;
+    }
+    .supportedby, .Grantsby{
+        font-size: 1rem;
+    }
+    .grantsorg{
+        flex-direction: column;
+        padding: 30px;
+        gap: 6px;
+        height: 100%;
+    }
+    .supportorg{
+        display: grid;
+        padding: 30px;
+        grid-template-columns: 0.5fr 0.5fr;
+        grid-template-rows: 0.5fr 0.5fr 0.5fr;
+        gap: 3px;
+        height: 100%;
+    }
+    .supportedby img, .Grantsby img{
+        object-fit: scale-down;
+        width: 6em;
+        height: 92px;
+        image-rendering: auto;      
+    }
+    .Grantsby img{
+        width: 8em;
+    }
+}

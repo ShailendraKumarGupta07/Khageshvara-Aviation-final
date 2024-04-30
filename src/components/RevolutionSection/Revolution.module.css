@@ -1,0 +1,326 @@
+
+.contentwrapper{
+    margin: -4% 0 10% 0;
+    height: 100%;
+    width: 100vw;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center ;
+    overflow: hidden;
+    gap: 1rem;
+}
+
+.heading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.75rem;
+    text-align: center;
+    align-items: center;
+    font-family: Elianto-Regular;
+    font-size: 4.25rem;
+    text-align: center;
+}
+.heading_1, .heading_2{
+    word-spacing: -15px;
+    text-align: center;
+}
+.heading .heading_2{
+    color: rgb(252, 185, 0);
+    width: 100%;
+}
+.heading .heading_3{
+    font-family: Elianto-Regular;
+    font-size: 1.12rem;
+}
+
+.EVTOL{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    gap: 20px;
+    margin: 20px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.EVTOL_1 {
+    width: 40%;
+    height: 10%;
+    display: block;
+    image-rendering: auto;
+    overflow: hidden;
+}
+.EVTOL_2{
+    display: grid;
+    grid-template-columns: 0.9fr 0.9fr 0.9fr ;
+    grid-template-rows: 1fr 1fr 1fr ;
+    font-family: Elianto-Regular;
+    text-align: center;
+    font-size: 1rem ;
+}
+.EVTOL_1 img{
+    display: block;
+    width: 633px;
+    height: 491px;
+    object-fit:cover;
+    position: relative;
+    animation-name: move;
+    animation-duration: 0.4s;
+}
+@keyframes move {
+    0%{
+        transform: translateY(100%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+.EVTOL_2 img{
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+    object-position: center;
+    image-rendering: auto;
+}
+
+
+/* Media Queries  */
+
+@media screen and (max-width: 1500px) and (min-width:1375px ){
+    .EVTOL_1 img{
+        transform: scale(0.8);
+        width: 633px;
+        height: 350px;
+    }
+    .EVTOL_2{
+        display: grid;
+        grid-template-columns: 0.9fr 0.9fr 0.9fr ;
+        grid-template-rows: 1fr 1fr 1fr ;
+        font-family: Elianto-Regular;
+        text-align: center;
+        font-size: 1.2rem ;
+    }
+    .EVTOL_2 img {
+        transform: scale(0.75);
+    }
+}
+@media screen and (max-width: 1375px) and (min-width:1200px ){
+    .EVTOL_1 img{
+        transform: translateX(-10%);
+        width: 633px;
+        height: 400px;
+
+    }
+    .EVTOL_2{
+        display: grid;
+        grid-template-columns: 0.7fr 0.7fr 0.7fr ;
+        grid-template-rows: 1fr 1fr 1fr ;
+        gap: 1rem;
+        font-family: Elianto-Regular;
+        text-align: center;
+        font-size: 1rem ;
+    }
+    .EVTOL_2 img {
+        transform: scale(0.75);
+    }
+}
+
+@media screen and (max-width: 1200px) and (min-width:768px ){
+    .heading{
+        font-size: 3.25rem;
+    }
+    .EVTOL{
+        flex-direction: column;
+    }
+    .EVTOL_1 {
+        width: 70%;
+        height: 10%;
+        display: block;
+        display: flex;
+        justify-content: center;
+        image-rendering: auto;
+        overflow: hidden;
+    }
+    .EVTOL_2{
+        display: grid;
+        grid-template-columns: 2fr 2fr 2fr ;
+        grid-template-rows: 1.5fr 1.5fr 1.5fr ;
+        gap: 0rem;
+        font-family: Elianto-Regular;
+        text-align: center;
+        font-size: 1rem ;
+    }
+    .EVTOL_2 img {
+        transform: scale(0.9);
+    }
+}
+@media screen and (max-width: 768px) and (min-width:600px ){
+    .heading_1, .heading_2{
+        font-size: 2.5rem;
+    }
+    .heading_3{
+        font-size: 1.16rem;
+    }
+    .EVTOL{
+        flex-direction: column;
+    }
+    .EVTOL_1 {
+        width: 70%;
+        height: 10%;
+        display: block;
+        display: flex;
+        justify-content: center;
+        image-rendering: auto;
+        overflow: hidden;
+    }
+    .EVTOL_1 img{
+        width: 633px;
+        height: 350px;
+
+    }
+    .EVTOL_2{
+        display: grid;
+        grid-template-columns: 1.5fr 1.5fr 1.5fr ;
+        grid-template-rows: 1fr 1fr 1fr ;
+        gap: 1.5rem;
+        font-family: Elianto-Regular;
+        text-align: center;
+        font-size: 0.75rem ;
+    }
+    .EVTOL_2 img {
+        transform: scale(0.75);
+    }
+}
+@media screen and (max-width: 600px) and (min-width:500px ){
+    .heading_1, .heading_2{
+        font-size: 2.5rem;
+    }
+    .heading_3{
+        font-size: 1.16rem;
+    }
+}
+@media screen and (max-width: 500px) and (min-width:320px ){
+    .heading{
+        font-size: 2.25rem;
+    }
+    .heading .heading_3{
+        font-size: 0.75rem;
+    }
+}
+@media screen and (max-width: 320px) and (min-width:300px ){
+    .heading{
+        font-size: 1.95rem;
+    }
+    .heading .heading_3{
+        font-size: 0.75rem;
+    }
+}
+
+@media screen and (max-width: 600px) and (min-width:500px ){
+    .EVTOL{
+        flex-direction: column;
+    }
+    .EVTOL_1 {
+        width: 100%;
+        height: 10%;
+        display: block;
+        display: flex;
+        justify-content: center;
+        image-rendering: auto;
+        overflow: hidden;
+    }
+    .EVTOL_1 img{
+        width: 500px;
+        height: 350px;
+
+    }
+    .EVTOL_2{
+        padding: 10px;
+        display: grid;
+        grid-template-columns: 1.5fr 1.5fr 1.5fr ;
+        grid-template-rows: 1fr 1fr 1fr ;
+        gap: 0rem;
+        font-family: Elianto-Regular;
+        text-align: center;
+        font-size: 0.75rem ;
+    }
+    .EVTOL_2 img {
+        transform: scale(0.75);
+    }
+}
+@media screen and (max-width: 500px) and (min-width:320px ){
+    .contentwrapper{
+        margin: -5% 0 -2% 0;
+    }
+    .EVTOL{
+        flex-direction: column;
+        gap: 50px;
+    }
+    .EVTOL_1 {
+        width: 100%;
+        height: 10%;
+        display: block;
+        display: flex;
+        justify-content: center;
+        image-rendering: auto;
+        overflow: hidden;
+    }
+    .EVTOL_1 img{
+        width: 400px;
+        height: 279px;
+
+    }
+    .EVTOL_2{
+        padding: 10px;
+        display: grid;
+        grid-template-columns: 1.5fr,1.5fr  ;
+        grid-template-rows: 1fr 1fr 1fr  ;
+        gap: 0rem;
+        font-family: Elianto-Regular;
+        text-align: center;
+        font-size: 0.75rem ;
+    }
+    .EVTOL_2 img {
+        transform: scale(0.6);
+    }
+}
+@media screen and (max-width: 320px) and (min-width:300px ){
+    .contentwrapper{
+        margin: -5% 0 -5% 0;
+    }
+    .EVTOL{
+        flex-direction: column;
+        gap: 50px;
+    }
+    .EVTOL_1 {
+        width: 100%;
+        height: 10%;
+        display: block;
+        display: flex;
+        justify-content: center;
+        image-rendering: auto;
+        overflow: hidden;
+        margin: 0px;
+    }
+    .EVTOL_1 img{
+        width: 249px;
+        height: 214px;
+
+    }
+    .EVTOL_2{
+        padding: 10px;
+        display: grid;
+        grid-template-columns: 1.5fr,1.5fr  ;
+        grid-template-rows: 1fr 1fr 1fr ;
+        gap: 0rem;
+        font-family: Elianto-Regular;
+        text-align: center;
+        font-size: 0.75rem ;
+    }
+    .EVTOL_2 img {
+        transform: scale(0.5);
+    }
+}

@@ -6,3 +6,11 @@
   font-family: flight;
   src: url("./assets/fonts/flight.ttf");
 }
+@font-face {
+  font-family: Elianto-Regular;
+  src: url("./assets/fonts/Elianto-Regular.otf");
+  font-display: block;
+}
+/* *{
+  border: 1px solid red;
+} */

@@ -1,0 +1,584 @@
+*{
+    box-sizing: border-box;
+}
+.wrapper{
+    height: 100%;
+    width: 100dvw;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center ;
+    margin-bottom: 50px;
+    gap: 1rem;
+    align-items: center;
+    position: relative;
+}
+.heading {
+    font-family: Elianto-Regular;
+    font-size: 4.25rem;
+    margin-top: 1rem;
+    text-align: center;
+    word-spacing: -20px;
+  }
+.heading .heading2 {
+    color: rgb(252, 185, 0);
+}
+.data{
+    height: 100%;
+    width: 100vw;
+    margin-top: 4vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1em;
+    
+
+}
+.data1, .data2{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.data1 p, .data2 p{
+    text-align: center;
+    font-family: Elianto-Regular;
+    font-size: 1.16rem;
+    word-spacing: -5px;
+}
+.data1b img{
+    width: 510px;
+    min-width: 500px;
+    height: auto;
+    border-radius: 30px 0 0 0;
+}
+.data1c{
+    background: linear-gradient(180deg,#001d3d 19.47525214457481%,rgb(0,53,102) 90.22648146154104%);
+    display: flex;
+    flex: .3 0 0px;  
+    flex-wrap: nowrap;
+    height: 102px;
+    justify-content: space-around;
+    margin-top: -10px;
+    position: relative;
+    width: 510px;    
+    font-size: 13px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    border-radius: 0px 0px 0px 30px;
+    padding: 20px;
+}
+.data1c_A, .data1c_B{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 2rem;
+}
+.data1c_C{
+    height: 300px;
+    background-color: white;
+    width: 0.1px;
+    margin-top: -5%;
+}
+.data1c_a img , .data1c_b img{
+    height: 125%;
+    width: 125%;
+    object-fit: contain;
+}
+.data1c_b_b_b, .data1c_b_a_b, .data1c_a_b_b, .data1c_a_a_b{
+    font-size:14px;
+}
+.data2b{
+    border-radius: 0 5% 5% 0;
+    height: 500px;
+    width: 500px;
+    overflow: hidden;
+    transform: translate3d(0px, 0px, 0px);
+}
+
+.data2 img{
+    width: 510px;
+    height: 376px;
+    padding: 50px 0 0 10px;
+}
+
+/* Video  */
+.play{
+    width: 500px;
+    height: 450px;
+    object-fit: contain;
+    transform: scale(1.1);
+    /* transform: translateY(-30%); */
+}
+
+
+
+/* Media queries  */
+@media screen and (max-width: 1200px ) and (min-width: 300px){
+    .data1c{
+        border-radius: 0px 0px 20px 20px;
+    }
+    .data1b img{
+        border-radius: 20px 20px 0px 0px;
+    }
+}
+@media screen and (max-width: 1200px) and (min-width:1000px ){
+    .wrapper{
+        height: 100%;
+        padding-bottom: 30px;
+    }
+    .data{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        gap: 0em;
+        padding: 0 30px 0 30px;
+    }
+    .heading{
+        word-spacing: -7px;
+    }
+    
+    .data2b{
+        transform: translate3d(0px, 0px, 0px);
+        overflow: hidden;
+        height: 425px;
+
+    }
+    #play{
+        transform: scale(1);
+        object-fit:contain;
+    }
+    .heading{
+        font-size: 3.25rem;
+        display: flex;
+        gap: 20px;
+    }
+    .data1b{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+    .data1b img{
+        width: 359px;
+        height: 325px;
+        min-width: 444px;
+    }
+    .data1c{
+        width: 100%;
+        height: 102px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2em;
+        padding: 21px;
+        
+    }
+    .data1c_A, .data1c_B{
+        display: flex;
+        justify-content: left;
+        gap: 5rem;
+        img{
+            transform: scale(1.5);
+        }
+    }
+    .data1c_C{
+        display: none;
+    }
+}
+@media screen and (max-width: 1000px) and (min-width:800px ){
+    .wrapper{
+       gap: 2rem;
+       height: 100%;
+    }
+    .data{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        gap: 2em;
+        padding: 0 30px 0 30px;
+        flex-wrap: nowrap;
+    }
+    .heading{
+        word-spacing: -7px;
+    }
+    
+    .data2b{
+        transform: translate3d(0px, 0px, 0px);
+        overflow: hidden;
+        height: 425px;
+
+    }
+    #play{
+        transform: scale(1);
+        object-fit:contain;
+    }
+    .heading{
+        font-size: 3.5rem;
+        display: flex;
+        gap: 20px;
+        margin-top: 3rem;
+    }
+    .data1b{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+    .data1b img{
+        width: 359px;
+        height: 325px;
+        min-width: 444px;
+    }
+    .data1c{
+        width: 100%;
+        height: 142px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2em;
+        padding: 40px;
+        
+    }
+    .data1c_A, .data1c_B{
+        display: flex;
+        justify-content: left;
+        gap: 5rem;
+        img{
+            transform: scale(1.5);
+        }
+    }
+    .data1c_C{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 800px) and (min-width:600px ){
+    .wrapper{
+        gap: 0rem;
+        height: 100%;
+     }
+     .data{
+         display: flex;
+         flex-direction: column;
+         height: 100%;
+         width: 100%;
+         justify-content: center;
+         align-items: center;
+         gap: 0em;
+         padding: 0 30px 0 30px;
+         flex-wrap: nowrap;
+     }
+     .heading{
+         word-spacing: -7px;
+     }
+     
+     .data2b{
+         transform: translate3d(0px, 0px, 0px);
+         overflow: hidden;
+         height: 425px;
+ 
+     }
+     #play{
+         transform: scale(1);
+         object-fit:contain;
+     }
+     .heading{
+         font-size: 2.5rem;
+         display: flex;
+         gap: 20px;
+         margin-top: 1.5rem;
+     }
+     .data1 , .data2{
+        transform: scale(0.8);
+     }
+     .data1b{
+         justify-content: center;
+         align-items: center;
+         display: flex;
+     }
+     .data1b img{
+         width: 359px;
+         height: 325px;
+         min-width: 444px;
+     }
+     .data1c{
+         width: 100%;
+         height: 142px;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         gap: 2em;
+         padding: 40px;
+         
+     }
+     .data1c_A, .data1c_B{
+         display: flex;
+         justify-content: left;
+         gap: 5rem;
+         img{
+             transform: scale(1.5);
+         }
+     }
+     .data1c_C{
+         display: none;
+     }
+}
+@media screen and (max-width: 600px) and (min-width:425px ){
+    .wrapper{
+        gap: 0rem;
+        height: 100%;
+     }
+     .data{
+         display: flex;
+         flex-direction: column;
+         height: 100%;
+         width: 100%;
+         justify-content: center;
+         align-items: center;
+         gap: 0em;
+         padding: 0 30px 0 30px;
+         flex-wrap: nowrap;
+
+     }
+     .heading{
+         word-spacing: -7px;
+     }
+     
+     .data2b{
+         transform: translate3d(0px, 0px, 0px);
+         overflow: hidden;
+         height: 425px;
+ 
+     }
+     #play{
+         transform: scale(1);
+         object-fit:contain;
+     }
+     .heading{
+         font-size: 2.5rem;
+         display: flex;
+         flex-direction: column;
+         gap: 10px;
+         margin-top: 1.5rem;
+     }
+     .data1 , .data2{
+        transform: scale(0.8);
+     }
+     .data1b{
+         justify-content: center;
+         align-items: center;
+         display: flex;
+     }
+     .data1b img{
+         width: 359px;
+         height: 325px;
+         min-width: 444px;
+     }
+     .data1c{
+         width: 100%;
+         height: 142px;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         gap: 2em;
+         padding: 40px;
+         
+     }
+     .data1c_A, .data1c_B{
+         display: flex;
+         justify-content: left;
+         gap: 5rem;
+         img{
+             transform: scale(1.5);
+         }
+     }
+     .data1c_C{
+         display: none;
+     }
+}
+@media screen and (max-width: 425px) and (min-width:350px ){
+    .wrapper{
+        gap: 0rem;
+        height: 100%;
+     }
+     .data{
+         display: flex;
+         flex-direction: column;
+         height: 100%;
+         width: 100%;
+         justify-content: center;
+         align-items: center;
+         gap: 0em;
+         padding: 0 30px 0 30px;
+         flex-wrap: nowrap;
+     }
+     .heading{
+         word-spacing: -7px;
+     }
+     
+     .data2b{
+         transform: translate3d(0px, 0px, 0px);
+         overflow: hidden;
+         height: 360px;
+ 
+     }
+     #play{
+         transform: scale(1);
+         object-fit:contain;
+     }
+     .play{
+        height: 340px;
+        width: 420px;
+
+     }
+     .heading{
+         font-size: 2rem;
+         display: flex;
+         flex-direction: column;
+         gap: 10px;
+         margin-top: 1.5rem;
+     }
+     .data1 , .data2{
+        transform: scale(0.8);
+        height: 90%;
+        p{
+            font-size: 1rem;
+        }
+     }
+     .data1b{
+         justify-content: center;
+         align-items: center;
+         display: flex;
+     }
+     .data1b img{
+        width: 340px;
+        height: 294px;
+        min-width: 366px;
+     }
+     .data1c{
+         width: 100%;
+         height: 142px;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         gap: 2em;
+         padding: 20px;
+         
+     }
+     .data1c_A, .data1c_B{
+         display: flex;
+         justify-content: left;
+         gap: 5rem;
+         img{
+             transform: scale(1.1);
+         }
+     }
+     .data1c_C{
+         display: none;
+     }
+     .data2b{
+        width: 430px;
+     }
+}
+@media screen and (max-width: 350px) and (min-width:300px ){
+    .wrapper{
+        gap: 0rem;
+        height: 100%;
+     }
+     .data{
+         display: flex;
+         flex-direction: column;
+         height: 100%;
+         width: 100%;
+         justify-content: center;
+         align-items: center;
+         gap: 0em;
+         padding: 0 15px 0 15px;
+         flex-wrap: nowrap;
+     }
+     .heading{
+         word-spacing: -7px;
+     }
+     
+     .data2b{
+         transform: translate3d(0px, 0px, 0px);
+         overflow: hidden;
+         height: 360px;
+ 
+     }
+     #play{
+         transform: scale(0.8);
+         object-fit:contain;
+     }
+     .play{
+        height: 340px;
+        width: 375px;
+        transform: translateX(10px);
+
+     }
+     .heading{
+         font-size: 2rem;
+         display: flex;
+         flex-direction: column;
+         gap: 10px;
+         margin-top: 1.5rem;
+     }
+     .data1 , .data2{
+        transform: scale(0.8);
+        height: 90%;
+        p{
+            font-size: 0.7rem;
+            word-spacing: 2px;
+        }
+     }
+     .data1b{
+         justify-content: center;
+         align-items: center;
+         display: flex;
+     }
+     .data1b img{
+        width: 340px;
+        height: 294px;
+        min-width: 346px;
+     }
+     .data1c{
+         width: 100%;
+         height: 142px;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         gap: 1em;
+         padding: 20px;
+        span{
+            font-size: 0.7rem;
+        }
+         
+     }
+     .data1c_A, .data1c_B{
+         display: flex;
+         justify-content: left;
+         gap: 4rem;
+         img{
+             transform: scale(1.1);
+         }
+     }
+     .data1c_C{
+         display: none;
+     }
+     .data2b{
+        width: 384px;
+     }
+}
