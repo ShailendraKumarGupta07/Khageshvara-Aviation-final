@@ -94,8 +94,8 @@ path.two {
     }
 }
 
-/* @media screen and (max-width:1400px) and (min-width:0px){
+@media screen and (max-width:1400px) and (min-width:0px){
     .scroll-button{
         display: none;
     }
-} */
+}
