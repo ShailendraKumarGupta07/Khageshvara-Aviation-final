@@ -25,7 +25,7 @@ const Revolution = () =>{
                 <img src={EVTOL} alt="" />
             </div>
             <div className={style.EVTOL_2}>
-                <div className={style.EVTOL_2_1}>
+                <div className={style.EVTOL_2_img}>
                     <div className={style.box1_a}>
                         <img src={Img1} alt="" />
                     </div>
@@ -33,7 +33,7 @@ const Revolution = () =>{
                         <p>Vertical take-off and landing</p>
                     </div>
                 </div>
-                <div className={style.EVTOL_2_2}>
+                <div className={style.EVTOL_2_img}>
                     <div className={style.box2_a}>
                         <img src={Img2} alt="" />
                     </div>
@@ -41,7 +41,7 @@ const Revolution = () =>{
                         <p>100% Electric</p>
                     </div>
                 </div>
-                <div className={style.EVTOL_2_3}>
+                <div className={style.EVTOL_2_img}>
                     <div className={style.box3_a}>
                         <img src={Img3} alt="" />
                     </div>
@@ -49,7 +49,7 @@ const Revolution = () =>{
                         <p>Cost Effective</p>
                     </div>
                 </div>
-                <div className={style.EVTOL_2_4}>
+                <div className={style.EVTOL_2_img}>
                     <div className={style.box4_a}>
                         <img src={Img4} alt="" />
                     </div>
@@ -57,7 +57,7 @@ const Revolution = () =>{
                         <p>Reliable</p>
                     </div>
                 </div>
-                <div className={style.EVTOL_2_5}>
+                <div className={style.EVTOL_2_img}>
                     <div className={style.box5_a}>
                         <img src={Img5} alt="" />
                     </div>
@@ -65,7 +65,7 @@ const Revolution = () =>{
                         <p>Quiet</p>
                     </div>
                 </div>
-                <div className={style.EVTOL_2_6}>
+                <div className={style.EVTOL_2_img}>
                     <div className={style.box6_a}>
                         <img src={Img6} alt="" />
                     </div>
@@ -73,7 +73,7 @@ const Revolution = () =>{
                         <p>Long Range</p>
                     </div>
                 </div>
-                <div className={style.EVTOL_2_7}>
+                <div className={style.EVTOL_2_img}>
                     <div className={style.box7_a}>
                         <img src={Img7} alt="" />
                     </div>
@@ -81,7 +81,7 @@ const Revolution = () =>{
                         <p>4 Passenger</p>
                     </div>
                 </div>
-                <div className={style.EVTOL_2_8}>
+                <div className={style.EVTOL_2_img}>
                     <div className={style.box8_a}>
                         <img src={Img8} alt="" />
                     </div>
@@ -89,7 +89,7 @@ const Revolution = () =>{
                         <p>Eco-Friendly</p>
                     </div>
                 </div>
-                <div className={style.EVTOL_2_9}>
+                <div className={style.EVTOL_2_img}>
                     <div className={style.box9_a}>
                         <img src={Img9} alt="" />
                     </div>
