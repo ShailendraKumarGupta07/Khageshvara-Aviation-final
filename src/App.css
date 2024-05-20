@@ -6,7 +6,7 @@ body{
 
 /* scroll button  */
 
-.scroll-button{
+.scroll_button{
   border: none;
   display: flex;
   justify-content: center;
