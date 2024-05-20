@@ -31,16 +31,23 @@ function App() {
       sectionRefs[id].current.style.display = "block";
     });
   }, []);
-
+  var nextIndex =(currentSectionIndex + 1) % sectionIds.length;
+  console.log(nextIndex);
   const scrollToNextSection = (event) => {
-    event.preventDefault();
-    const nextIndex = (currentSectionIndex + 1) % sectionIds.length;
+    // nextIndex = (currentSectionIndex + 1) % sectionIds.length;
     const nextSectionId = sectionIds[nextIndex];
+    event.preventDefault();
     const nextSectionRef = sectionRefs[nextSectionId];
     if (nextSectionRef && nextSectionRef.current) {
       nextSectionRef.current.scrollIntoView({ behavior: "smooth" });
-      setCurrentSectionIndex(nextIndex);
+      if(nextIndex==6){
+        setCurrentSectionIndex(-1);
+      }else{
+        setCurrentSectionIndex(nextIndex);
+
+      }
     }
+    console.log(nextIndex);
   };
    
   return (
@@ -70,7 +77,8 @@ function App() {
       <div ref={sectionRefs.support} style={{ display: "none" }}>
         <Footer />
       </div>
-      <div className="scroll-button" role="button" onClick={(event) => scrollToNextSection(event)} tabIndex="0">
+      <div className="scroll_button" role="button" onClick={(event) => scrollToNextSection(event)} tabIndex="0"
+      style={{transform : (nextIndex==0) ? 'rotate(180deg)':'rotate(0deg)'}}>
         <div className="wrapper">
           <a className="cta" href="#">
             <span>
