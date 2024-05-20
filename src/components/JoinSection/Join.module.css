@@ -71,7 +71,7 @@
         justify-content: center;
     }
     .button{
-        font-size: 0.7rem;
+        font-size: 0.8rem;
         line-height: 1em;
         letter-spacing: 2px;
         text-align: center;
@@ -82,19 +82,19 @@
   }
   @media screen and (max-width: 400px) and (min-width:300px ){
     .Head{
-        font-size: 2.4rem;
+        font-size: 2.3rem;
     }
     .joinbutton{
         display: flex;
         justify-content: center;
     }
     .button{
-        font-size: 0.7rem;
+        font-size: 0.8rem;
         line-height: 1em;
         letter-spacing: 1.8px;
         text-align: center;
         height: 70%;
-        width: 70%;
+        width: 75%;
     }
 
   }
