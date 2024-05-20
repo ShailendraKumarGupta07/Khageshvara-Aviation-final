@@ -48,7 +48,7 @@ const Navbar = () => {
         <div className={styles.hamburger} onClick={handleHamburgerClick}>
           <Hamburger toggled={isOpen} toggle={setOpen} easing="ease-in" duration={0.3}></Hamburger>
           {isOpen && (
-            <div className={styles.dropdown} style={{ zIndex: 9999 }} onClick={disable}>
+            <div className={styles.dropdown} onClick={disable}>
               <div className={styles.dropdownElement}>Company</div>
               <div className={styles.dropdownElement}>Technology</div>
               <div className={styles.dropdownElement}>Careers</div>

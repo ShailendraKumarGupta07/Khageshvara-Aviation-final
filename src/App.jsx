@@ -32,9 +32,7 @@ function App() {
     });
   }, []);
   var nextIndex =(currentSectionIndex + 1) % sectionIds.length;
-  console.log(nextIndex);
   const scrollToNextSection = (event) => {
-    // nextIndex = (currentSectionIndex + 1) % sectionIds.length;
     const nextSectionId = sectionIds[nextIndex];
     event.preventDefault();
     const nextSectionRef = sectionRefs[nextSectionId];
@@ -47,7 +45,6 @@ function App() {
 
       }
     }
-    console.log(nextIndex);
   };
    
   return (
