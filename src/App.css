@@ -16,6 +16,8 @@ body{
   bottom: 5%;
   z-index: 2;
   background-color: transparent;
+  -webkit-user-select: none;
+  user-select: none;
 }
 
 .wrapper {
