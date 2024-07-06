@@ -58,6 +58,9 @@ const Navbar = () => {
           {isOpen && (
             <div className={styles.dropdown} onClick={disable}>
               <div className={styles.dropdownElement}>
+                <Link className={styles.about} to="/">Home</Link>
+              </div>
+              <div className={styles.dropdownElement}>
                 <Link className={styles.about} to="/about">About Us</Link>
               </div>
               <div className={styles.dropdownElement}>
