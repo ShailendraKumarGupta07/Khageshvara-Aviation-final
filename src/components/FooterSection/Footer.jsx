@@ -40,13 +40,13 @@ const Footer = () => {
           <div className={style.right}>
             <div className={style.links}>
               <div className={style.link1}>
-                <a href="/">Company</a>
+                <a href="/about">About Us</a>
               </div>
               <div className={style.link2}>
-                <a href="/">Technology</a>
+                <a href="/technology">Technology</a>
               </div>
               <div className={style.link3}>
-                <a href="/">Careers</a>
+                <a href="/career">Careers</a>
               </div>
             </div>
             <div className={style.social_handles}>
@@ -63,7 +63,7 @@ const Footer = () => {
         </div>
         <div className={style.copyright}>
           <div className={style.text}>
-          © 2024 Khageshvara Aviation Technology private limited, all rights reserved 
+          © 2024 Khageshvara Aviation Technology private limited, all rights reserved
           </div>
         </div>
     </div>

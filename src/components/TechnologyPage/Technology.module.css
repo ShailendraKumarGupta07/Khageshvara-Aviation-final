@@ -1,0 +1,34 @@
+.contentwrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-repeat: none ;
+    height: 100dvh;
+    width: 100dvw;
+    flex-direction: column;
+    position: relative;
+}
+.section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+    place-content: center space-between;
+}
+.image{
+    background-image: url('../../assets/comingsoon.svg');
+    height:400px;
+    width: 300px;
+    background-repeat: no-repeat;
+
+}
+.text{
+    font-family: Elianto-Regular;
+    font-size:4.2rem;
+    word-spacing: -1rem;
+    span{
+        color: rgb(252, 185, 0);
+    }
+}

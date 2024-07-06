@@ -4,7 +4,7 @@
 }
 .active{
   top: 0;
-  transition: top 0.5s ease-in-out; 
+  transition: top 0.5s ease-in-out;
 }
 .hidden{
   top: -100px;
@@ -12,7 +12,7 @@
 }
 .active1{
   top: 0;
-  transition: top 0.5s ease-in-out; 
+  transition: top 0.5s ease-in-out;
 }
 .hidden1{
   top: -100px;
@@ -57,6 +57,16 @@ nav{
   transition: color 0.5s;
 }
 
+.about , .technology , .career{
+  text-decoration: none;
+  color: black;
+
+}
+.about:hover, .technology:hover, .career:hover {
+    color: rgb(252, 185, 0);
+
+}
+
 .listElement:hover {
   cursor: pointer;
   color: rgb(252, 185, 0);
@@ -79,18 +89,19 @@ nav{
 }
 .name:hover{
   text-decoration: underline;
+  cursor: pointer;
 }
 
 .dropdown {
   position: absolute;
   z-index: 9999;
-  top: 100%; 
+  top: 100%;
   left: 0;
-  width: 100vw; 
+  width: 100vw;
   height: auto;
   background-color: rgb(255, 255, 255);
   border-radius: 4px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   text-align: center;
   display: flex;
   justify-content: center;
@@ -102,11 +113,11 @@ nav{
   font-size: 1rem;
   font-weight: bold;
   letter-spacing: 5px;
-  
+
 }
 .dropdownElement {
-  padding: 10px; 
-  cursor: pointer; 
+  padding: 10px;
+  cursor: pointer;
   z-index: 5;
 }
 .dropdownElement:hover {
@@ -134,7 +145,7 @@ nav{
     text-align: center;
     margin-right: 20%;
     display: none;
-    
+
   }
 }
 @media screen and (max-width: 768px) and (min-width:320px ){

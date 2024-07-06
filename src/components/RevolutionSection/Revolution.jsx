@@ -10,6 +10,7 @@ import Img7 from "../../assets/img7.svg"
 import Img8 from "../../assets/img8.svg"
 import Img9 from "../../assets/img9.svg"
 import EVTOL from "../../assets/EVTOL_plane.webp"
+import EVTOL2 from "../../assets/videos/EVTOL2.mp4"
 
 const Revolution = () =>{
   return (
@@ -18,9 +19,11 @@ const Revolution = () =>{
         <div className={style.heading}>
             <span className={style.heading_1}>INDIA'S AIR TAXI</span>
             <span className={style.heading_2}>REVOLUTION</span>
-            <span className={style.heading_3}>100+ km Range, Affordable, Quiet.</span>
+            {/* <span className={style.heading_3}>100+ km Range, Affordable, Quiet.</span> */}
         </div>
-        <div className={style.EVTOL}>
+
+
+        {/* <div className={style.EVTOL}>
             <div className={style.EVTOL_1}>
                 <img src={EVTOL} alt="" />
             </div>
@@ -98,7 +101,15 @@ const Revolution = () =>{
                     </div>
                 </div>
             </div>
+        </div> */}
+
+        <div className={style.Evtol_video}>
+            <video className={style.v2} autoPlay loop muted>
+                <source src={EVTOL2} type="video/mp4"/>
+            </video>
         </div>
+
+
     </div>
     </>
   )

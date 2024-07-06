@@ -12,7 +12,6 @@
     margin-bottom: 50px;
     gap: 1rem;
     align-items: center;
-    position: relative;
 }
 .heading {
     font-family: Elianto-Regular;
@@ -33,7 +32,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     gap: 1em;
-    
+
 
 }
 .data1, .data2{
@@ -56,13 +55,13 @@
 .data1c{
     background: linear-gradient(180deg,#001d3d 19.47525214457481%,rgb(0,53,102) 90.22648146154104%);
     display: flex;
-    flex: .3 0 0px;  
+    flex: .3 0 0px;
     flex-wrap: nowrap;
     height: 102px;
     justify-content: space-around;
     margin-top: -10px;
     position: relative;
-    width: 510px;    
+    width: 510px;
     font-size: 13px;
     font-weight: bold;
     color: white;
@@ -142,7 +141,7 @@
     .heading{
         word-spacing: -7px;
     }
-    
+
     .data2b{
         transform: translate3d(0px, 0px, 0px);
         overflow: hidden;
@@ -177,7 +176,7 @@
         align-items: center;
         gap: 2em;
         padding: 21px;
-        
+
     }
     .data1c_A, .data1c_B{
         display: flex;
@@ -210,7 +209,7 @@
     .heading{
         word-spacing: -7px;
     }
-    
+
     .data2b{
         transform: translate3d(0px, 0px, 0px);
         overflow: hidden;
@@ -246,7 +245,7 @@
         align-items: center;
         gap: 2em;
         padding: 40px;
-        
+
     }
     .data1c_A, .data1c_B{
         display: flex;
@@ -280,12 +279,12 @@
      .heading{
          word-spacing: -7px;
      }
-     
+
      .data2b{
          transform: translate3d(0px, 0px, 0px);
          overflow: hidden;
          height: 425px;
- 
+
      }
      #play{
          transform: scale(1);
@@ -319,7 +318,7 @@
          align-items: center;
          gap: 2em;
          padding: 40px;
-         
+
      }
      .data1c_A, .data1c_B{
          display: flex;
@@ -353,12 +352,12 @@
      .heading{
          word-spacing: -7px;
      }
-     
+
      .data2b{
          transform: translate3d(0px, 0px, 0px);
          overflow: hidden;
          height: 425px;
- 
+
      }
      #play{
          transform: scale(1);
@@ -393,7 +392,7 @@
          align-items: center;
          gap: 2em;
          padding: 40px;
-         
+
      }
      .data1c_A, .data1c_B{
          display: flex;
@@ -426,12 +425,12 @@
      .heading{
          word-spacing: -7px;
      }
-     
+
      .data2b{
          transform: translate3d(0px, 0px, 0px);
          overflow: hidden;
          height: 360px;
- 
+
      }
      #play{
          transform: scale(1);
@@ -475,7 +474,7 @@
          align-items: center;
          gap: 2em;
          padding: 20px;
-         
+
      }
      .data1c_A, .data1c_B{
          display: flex;
@@ -511,12 +510,12 @@
      .heading{
          word-spacing: -7px;
      }
-     
+
      .data2b{
          transform: translate3d(0px, 0px, 0px);
          overflow: hidden;
          height: 360px;
- 
+
      }
      #play{
          transform: scale(0.8);
@@ -565,7 +564,7 @@
         span{
             font-size: 0.8rem;
         }
-         
+
      }
      .data1c_A, .data1c_B{
          display: flex;

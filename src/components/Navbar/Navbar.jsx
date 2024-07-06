@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import styles from "./Navbar.module.css";
 import logo from "../../assets/khageshvaraImageLogo.svg";
 import { Sling as Hamburger } from 'hamburger-react';
+import {BrowserRouter,Routes,Route,Link,} from "react-router-dom";
+
 
 const Navbar = () => {
   const [prevScrollPos, setPrevScrollPos] = useState(0);
@@ -17,7 +19,7 @@ const Navbar = () => {
     };
     window.addEventListener("scroll", handleScroll);
     return () => {
-      window.removeEventListener("scroll", handleScroll);;
+      window.removeEventListener("scroll", handleScroll);
     };
   }, [prevScrollPos]);
 
@@ -27,7 +29,7 @@ const Navbar = () => {
   const disable = () => {
     setColorChanged(prevColor => !prevColor);
   };
-  
+
 
   return (
     <>
@@ -36,22 +38,34 @@ const Navbar = () => {
           <img src={logo} alt="Logo" />
         </div>
         <div className={styles.name}>
-          <a href="/">KHAGHESHVARA</a>
+          <a  href="/" className={styles.name}>KHAGHESHVARA</a>
         </div>
 
         <div className={styles.list}>
-          <div className={styles.listElement}>Company</div>
-          <div className={styles.listElement}>Technology</div>
-          <div className={styles.listElement}>Careers</div>
+          <div className={styles.listElement}>
+             <Link className={styles.about} to="/about">About Us</Link>
+          </div>
+          <div className={styles.listElement}>
+            <Link className={styles.technology} to="/technology">Technology</Link>
+          </div>
+          <div className={styles.listElement}>
+            <Link className={styles.career} to="/career">Careers</Link>
+          </div>
         </div>
-        
+
         <div className={styles.hamburger} onClick={handleHamburgerClick}>
-          <Hamburger toggled={isOpen} toggle={setOpen} easing="ease-in" duration={0.3}></Hamburger>
+          <Hamburger toggled={isOpen} toggle={setOpen} easing="ease-in" duration={0.3} ></Hamburger>
           {isOpen && (
             <div className={styles.dropdown} onClick={disable}>
-              <div className={styles.dropdownElement}>Company</div>
-              <div className={styles.dropdownElement}>Technology</div>
-              <div className={styles.dropdownElement}>Careers</div>
+              <div className={styles.dropdownElement}>
+                <Link className={styles.about} to="/about">About Us</Link>
+              </div>
+              <div className={styles.dropdownElement}>
+                <Link className={styles.technology} to="/technology">Technology</Link>
+              </div>
+              <div className={styles.dropdownElement}>
+                <Link className={styles.career} to="/career">Careers</Link>
+              </div>
             </div>
           )}
         </div>
