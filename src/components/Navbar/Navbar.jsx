@@ -17,9 +17,20 @@ const Navbar = () => {
       setVisible(prevScrollPos > currentScrollPos || currentScrollPos < 10);
       setPrevScrollPos(currentScrollPos);
     };
+
+    const handleMouseMove = (e) => {
+      if (e.clientY <= 100) {
+        setVisible(true);
+      }
+    };
+
+
     window.addEventListener("scroll", handleScroll);
+    window.addEventListener("mousemove", handleMouseMove);
+    
     return () => {
       window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("mousemove", handleMouseMove);
     };
   }, [prevScrollPos]);
 
