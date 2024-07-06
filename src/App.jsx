@@ -114,6 +114,7 @@ function App() {
                                           <AboutUs/>
                                           </div>} />
           <Route exact path="/technology" element={<Technology/>} />
+          <Route exact path="/career" element={<Career/>} />
           <Route exact path="/about/business" element={<BusinessTeam/>}></Route>
           <Route exact path="/about/tech" element={<TechTeam/>}></Route>
         </Routes>
