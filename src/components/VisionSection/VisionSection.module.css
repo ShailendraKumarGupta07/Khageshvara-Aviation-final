@@ -9,10 +9,8 @@
   text-align: center  ;
 }
 .heading {
-  font-family: Elianto-Regular;
   font-size: 4.2rem;
   margin-top: 2rem;
-  word-spacing: -15px;
 }
 .heading span {
   color: rgb(252, 185, 0);
@@ -54,19 +52,15 @@
   gap: 1rem;
 }
 .textHeading {
-  font-family: Elianto-Regular;
   font-size: 2.3rem;
   color: rgb(252, 185, 0);
   text-align: justify;
-  word-spacing: -10px;
 }
 .textPara {
   max-width: 500px;
   line-height: 1.5em;
-  font-family: Elianto-Regular;
   text-align: justify;
   min-width: 400px;
-  word-spacing: -0.5%;
 }
 
 /* new one */
@@ -83,7 +77,6 @@
   height: 70vh;
   width: 90vw;
   position: relative;
-  /* border: 1px solid black; */
   display: flex;
   justify-content: center;
 }
@@ -246,11 +239,9 @@
 @media screen and (max-width:500px) and (min-width:480px){
   .heading{
     font-size:2.5rem ;
-    word-spacing: -0.75rem;
   }
   .textHeading{
     font-size: 1.25rem;
-    word-spacing: -0.3rem;
   }
   .planeImage > img {
     width: 70vw;
@@ -282,11 +273,9 @@
 @media screen and (max-width:480px) and (min-width:400px){
   .heading{
     font-size:2.5rem ;
-    word-spacing: -0.6rem;
   }
   .textHeading{
     font-size: 1.3rem;
-    word-spacing: -0.3rem;
   }
   .planeImage > img {
     width: 90vw;
@@ -322,7 +311,6 @@
 @media screen and (max-width:400px) and (min-width:300px){
   .heading{
     font-size:2.5rem ;
-    word-spacing: -0.5rem;
   }
   .textHeading{
     font-size: 1.3rem;

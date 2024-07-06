@@ -13,14 +13,12 @@
     display: flex;
     flex-direction: column;
     text-align: center;
-    font-family: Elianto-Regular;
     font-size: 4.25rem;
     margin-top: 2rem;
-    word-spacing: -15px;
 }
 .Head span{
     color: rgb(252, 185, 0);
-    
+
 }
 .joinbutton{
     height: 60px;
@@ -51,7 +49,7 @@
     .button{
       font-size: 1rem;
     }
-    
+
   }
   @media screen and (max-width: 600px) and (min-width:500px ){
     .Head{
@@ -100,4 +98,3 @@
   }
 
 
-  

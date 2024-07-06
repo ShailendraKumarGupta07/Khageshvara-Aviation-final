@@ -27,7 +27,7 @@ const Navbar = () => {
 
     window.addEventListener("scroll", handleScroll);
     window.addEventListener("mousemove", handleMouseMove);
-    
+
     return () => {
       window.removeEventListener("scroll", handleScroll);
       window.removeEventListener("mousemove", handleMouseMove);
@@ -54,13 +54,13 @@ const Navbar = () => {
 
         <div className={styles.list}>
           <div className={styles.listElement}>
-             <Link className={styles.about} to="/about">About Us</Link>
+             <a className={styles.about} href="/about">About Us</a>
           </div>
           <div className={styles.listElement}>
-            <Link className={styles.technology} to="/technology">Technology</Link>
+            <a className={styles.technology} href="/technology">Technology</a>
           </div>
           <div className={styles.listElement}>
-            <Link className={styles.career} to="/career">Careers</Link>
+            <a className={styles.career} href="/career">Careers</a>
           </div>
         </div>
 
@@ -72,13 +72,13 @@ const Navbar = () => {
                 <a className={styles.about} href="/">Home</a>
               </div>
               <div className={styles.dropdownElement}>
-                <Link className={styles.about} to="/about">About Us</Link>
+                <a className={styles.about} href="/about">About Us</a>
               </div>
               <div className={styles.dropdownElement}>
-                <Link className={styles.technology} to="/technology">Technology</Link>
+                <a className={styles.technology} href="/technology">Technology</a>
               </div>
               <div className={styles.dropdownElement}>
-                <Link className={styles.career} to="/career">Careers</Link>
+                <a className={styles.career} href="/career">Careers</a>
               </div>
             </div>
           )}

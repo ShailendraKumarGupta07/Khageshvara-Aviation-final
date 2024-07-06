@@ -2,8 +2,8 @@ import React from "react";
 import {Link, Routes,Route , BrowserRouter} from 'react-router-dom';
 import style from './AboutUs.module.css';
 import topimage from '../../assets/background_About_page.jpg';
-import Ritvik from '../../assets/member_images/ritvik yadav.jpg';
-import Shayandeep  from '../../assets/member_images/Shayandeep Das.jpg';
+import Ritvik from '../../assets/member_images/ritvik yadav.png';
+import Shayandeep  from '../../assets/member_images/Shayandeep Das.png';
 import BusinessTeam from "../BusinesTeam/BusinessTeam";
 import TechTeam from "../TechTeam/TechTeam";
 
@@ -24,13 +24,6 @@ const AboutUs = () => {
         </div>
       </div>
       <div className={style.members}>
-        <div className={style.heading1}>
-            Our <span>Team</span>
-        </div>
-        <div className={style.redirect_links}>
-            <Link className={style.link} to="/about/business">Business Strategic Team</Link>
-            <Link className={style.link} to="/about/tech"> Tech Team</Link>
-        </div>
         <div className={style.co}>
           Co - <span>Founders</span>
         </div>
@@ -60,11 +53,18 @@ const AboutUs = () => {
                 </div>
                 <div className={style.member_position}>Co-Founder </div>
                 <div className={style.about_member}>
-                  <p>Shayandeep Das is one of K.A.T's co-founders. He is currently a Master's in Health Economics and Statistics at Oxford University and a Data Analyst. He was formerly a Board Member of a nonprofit. He is passionate about machine learning and the electrification of drones. Let's together Reach the Unreachable.</p>
-                  <p>Responsible for the Business Development and Strategy of the K.A.T </p>
+                  <div>Shayandeep Das is one of K.A.T's co-founders. He is currently a Master's in Health Economics and Statistics at Oxford University and a Data Analyst. He was formerly a Board Member of a nonprofit. He is passionate about machine learning and the electrification of drones. Let's together Reach the Unreachable.</div>
+                  <div>Responsible for the Business Development and Strategy of the K.A.T </div>
                 </div>
               </div>
           </div>
+        </div>
+        <div className={style.heading1}>
+            Meet <span>Our</span> Team
+        </div>
+        <div className={style.redirect_links}>
+            <a className={style.link} href="/about/business">Business Strategic Team</a>
+            <a className={style.link} href="/about/tech"> Tech Team</a>
         </div>
       </div>
     </div>

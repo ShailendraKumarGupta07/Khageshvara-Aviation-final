@@ -16,8 +16,8 @@
     flex-wrap: wrap;
     gap: 1rem;
     text-align: center;
-    font-family: Elianto-Regular;
     font-size: 1.16rem;
+    font-weight: bold;
 }
 .supportorg, .grantsorg{
     display: flex;
@@ -38,7 +38,7 @@
     width: 9vw;
     height: 102px;
     image-rendering: auto;
-    
+
 }
 
 
@@ -67,7 +67,7 @@
         width: 4.5em;
         height: 90px;
         image-rendering: auto;
-        
+
     }
 }
 
@@ -96,7 +96,7 @@
         object-fit: scale-down;
         width: 9em;
         height: 102px;
-        image-rendering: auto;      
+        image-rendering: auto;
     }
 }
 @media screen and (max-width: 400px) and (min-width:300px ){
@@ -124,7 +124,7 @@
         object-fit: scale-down;
         width: 6em;
         height: 92px;
-        image-rendering: auto;      
+        image-rendering: auto;
     }
     .Grantsby img{
         width: 8em;

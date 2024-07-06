@@ -29,6 +29,7 @@ nav{
   top: 0;
   left: 0;
   z-index: 1;
+
 }
 .imageLogoContainer {
   width: 33%;
@@ -43,7 +44,6 @@ nav{
 }
 .list {
   display: flex;
-  font-family: Elianto-Regular;
   width: 33%;
   height: 100%;
   align-items: center;
@@ -78,7 +78,6 @@ nav{
   justify-content: center;
   align-items: center;
   z-index: -1;
-  font-family: Elianto-Regular;
   font-size: 1rem;
   font-weight: bold;
   letter-spacing: 5px;
@@ -109,7 +108,6 @@ nav{
   flex-direction: column;
   gap: 20px;
   padding: 50px;
-  font-family: Elianto-Regular;
   font-size: 1rem;
   font-weight: bold;
   letter-spacing: 5px;

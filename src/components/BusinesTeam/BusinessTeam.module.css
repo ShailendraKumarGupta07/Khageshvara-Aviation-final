@@ -57,6 +57,7 @@ body{
 /* member section  */
 .team_members{
     display: flex;
+    flex-direction: column;
     gap:30px;
 
 }
@@ -72,19 +73,18 @@ body{
 }
 .member{
     display: flex;
-    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
     background: linear-gradient(rgb(0, 29, 61) 0%, rgb(0, 53, 102) 100%);
     padding: 50px;
     gap: 50px;
     color: white;
-    height: 110vh;
-    width: 50%;
+    height: 100%;
+    width:100%;
 }
 
 .member_image{
     height: 100%;
-    display: flex;
-    justify-content: center;
     img{
         border-radius: 40px 40px 0 0;
         height: 300px;
@@ -182,9 +182,6 @@ body{
     }
 
 }
-
-/* media queries for member images  */
-
 @media screen and (max-width:1260px) and (min-width:800px){
     .member_image{
         height: 100%;

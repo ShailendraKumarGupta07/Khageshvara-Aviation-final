@@ -8,6 +8,9 @@
     justify-content: center;
     align-items: center;
     margin-top: -4%;
+    border-bottom: 1px solid #d9d9d9;
+    border-top: 1px solid #d9d9d9;
+
 }
 .Head{
     display: flex;
@@ -16,14 +19,10 @@
     text-align: center;
 }
 .sub1{
-    font-family: Elianto-Regular;
     font-size: 4.25rem;
-    word-spacing: -15px;
 }
 .sub2{
-    font-family: Elianto-Regular;
     font-size: 1.12rem;
-    word-spacing: -5px;
 }
 .sub1 span{
     color: rgb(252, 185, 0);
@@ -37,15 +36,15 @@
     justify-content: center;
     height: 100vh;
     width: 100vw;
-    font-family: Elianto-Regular;
+
     font-weight: 400;
     -webkit-user-select: none;
     user-select: none;
     margin-top: -3%;
     position: relative;
   }
-  
-  .left, .right{ 
+
+  .left, .right{
     position: absolute;
     /* z-index: 1; */
     background: rgba(0,0,0,0.2);
@@ -76,32 +75,32 @@
     right:1%;
     top: 45%;
   }
-  
+
   .carousel {
     display:flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    width: 80%; 
+    width: 80%;
     height: 70%;
     position: relative;
     z-index: 0;
     border-radius: 10px;
   }
-  
+
   .cards {
     display: flex;
     height: 100%;
     width: 100%;
     transition: transform 0.5s ease;
   }
-  
+
   .card {
     display: flex;
     flex: 0 0 100%;
     cursor: grab;
   }
-  
+
   .card img {
     width: 65%;
     height: auto;
@@ -117,12 +116,10 @@
     background:linear-gradient(180deg,#001d3d 30.351030270486756%,rgb(0,53,102) 95.6440029532185%);
     color: white;
     line-height: 1.2em;
-    letter-spacing: 0.01em;
     text-align: justify;
     padding:40px;
-    word-spacing: -5px;
   }
-  
+
   .change{
     height: 30px;
     width: 80px;
@@ -134,8 +131,8 @@
     border-radius: 30px;
     position: absolute;
     z-index: 1;
-    bottom: 5%;  
-    left: 46%;  
+    bottom: 5%;
+    left: 46%;
   }
   .change_1, .change_2, .change_3{
     height: 10px;
@@ -152,8 +149,8 @@
     .sub1{
       font-size: 3.25rem;
     }
-  
-    
+
+
   }
   @media screen and (max-width: 600px) and (min-width:500px ){
     .sub1{
@@ -161,8 +158,6 @@
     }
     .sub2{
       font-size: 1rem;
-      word-spacing: 0px;
-
     }
 
   }
@@ -172,11 +167,10 @@
     }
     .sub2{
       font-size: 1rem;
-      word-spacing: 0px;
     }
 
   }
-  
+
   @media screen and (max-width: 1400px) and (min-width:1000px ){
     .card img {
       width: 60%;
@@ -199,7 +193,7 @@
       margin: 50px;
     }
     .carousel {
-      width: 70%; 
+      width: 70%;
       height: 100%;
       border-radius: 10px;
     }
@@ -251,7 +245,7 @@
       margin: 50px;
     }
     .carousel {
-      width: 70%; 
+      width: 70%;
       height: 100%;
       border-radius: 10px;
     }
@@ -304,7 +298,7 @@
       margin: 50px;
     }
     .carousel {
-      width: 70%; 
+      width: 70%;
       height: 100%;
       border-radius: 10px;
     }
@@ -357,7 +351,7 @@
       margin: 50px;
     }
     .carousel {
-      width: 70%; 
+      width: 70%;
       height: 100%;
       border-radius: 10px;
     }

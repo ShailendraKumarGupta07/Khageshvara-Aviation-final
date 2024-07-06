@@ -5,7 +5,7 @@ import VEDANSH_AGGARWAL from '../../assets/member_images/VEDANSH AGGARWAL.jpg';
 import EliseReyes from '../../assets/member_images/Elise Reyes.jpeg';
 import Piyaal from '../../assets/member_images/Piyal Chaudhary.jpg';
 import Swasti from '../../assets/member_images/Swasti Dubey.jpeg';
-import style from '../AboutUsPage/AboutUs.module.css'
+import style from '../BusinesTeam/BusinessTeam.module.css'
 
 const BusinessTeam = () =>{
   return (
@@ -23,13 +23,6 @@ const BusinessTeam = () =>{
         </div>
       </div>
       <div className={style.members}>
-        <div className={style.heading1}>
-            Our <span>Team</span>
-        </div>
-        <div className={style.redirect_links}>
-            <Link className={style.link} to="/about">Co-Founders</Link>
-            <Link className={style.link} to="/about/tech"> Tech Team</Link>
-        </div>
         <div className={style.co}>
           Business <span>Strategic</span> Team
         </div>
@@ -101,6 +94,13 @@ const BusinessTeam = () =>{
                 </div>
             </div>
             </div>
+        </div>
+        <div className={style.heading1}>
+            Meet <span>Our</span> Team
+        </div>
+        <div className={style.redirect_links}>
+            <a className={style.link} href="/about">Co-Founders</a>
+            <a className={style.link} href="/about/tech"> Tech Team</a>
         </div>
       </div>
     </div>
