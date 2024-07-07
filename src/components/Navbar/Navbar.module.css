@@ -19,7 +19,7 @@
   transition: top 0.5s ease-in-out;
 }
 nav{
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.566);
   height: 75px;
   width: 100vw;
   display: flex;
@@ -28,7 +28,7 @@ nav{
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1;
+  z-index: 10;
 
 }
 .imageLogoContainer {
@@ -79,12 +79,13 @@ nav{
   align-items: center;
   z-index: -1;
   font-size: 1rem;
-  font-weight: bold;
+  font-weight: bolder;
   letter-spacing: 5px;
 }
 .name a{
   text-decoration: none;
   color: black;
+  font-weight: bolder;
 }
 .name:hover{
   text-decoration: underline;

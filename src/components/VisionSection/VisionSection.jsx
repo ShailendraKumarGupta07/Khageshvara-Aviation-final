@@ -3,35 +3,28 @@ import styles from "./VisionSection.module.css"
 import plane from "../../assets/visionPlane.webp"
 import bottom from "../../assets/visionBottom.svg"
 import v from "../../assets/videos/EVTOL.mp4"
-import IM1 from '../../assets/KHAG.png'
-import IM2 from '../../assets/khag3.png'
+import IM1 from '../../assets/KHAG.jpg'
+import IM2 from '../../assets/khag3.jpg'
 const VisionSection = () => {
 
   const [percent, setPercent] = useState(50);
+  const [direction, setDirection] = useState(1);
   const containerRef = useRef(null);
 
   useEffect(() => {
-    const handleMouseMove = (e) => {
-      if (containerRef.current) {
-        const rect = containerRef.current.getBoundingClientRect();
-        const x = e.clientX - rect.left;
-        const width = rect.width;
-        const newPercent = (x / width) * 100;
-        setPercent(newPercent);
-      }
-    };
+    const interval = setInterval(() => {
+      setPercent(prevPercent => {
+        let newPercent = prevPercent + direction;
+        if (newPercent >= 100 || newPercent <= 0) {
+          setDirection(-direction);
+          newPercent = prevPercent;
+        }
+        return newPercent;
+      });
+    }, 50);
 
-    const container = containerRef.current;
-    if (container) {
-      container.addEventListener('mousemove', handleMouseMove);
-    }
-
-    return () => {
-      if (container) {
-        container.removeEventListener('mousemove', handleMouseMove);
-      }
-    };
-  }, []);
+    return () => clearInterval(interval);
+  }, [direction]);
   return (
     <>
         <div className={styles.pageWrapper}>

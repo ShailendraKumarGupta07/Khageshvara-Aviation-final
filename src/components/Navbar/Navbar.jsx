@@ -14,12 +14,12 @@ const Navbar = () => {
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollPos = window.scrollY;
-      setVisible(prevScrollPos > currentScrollPos || currentScrollPos < 10);
+      setVisible((prevScrollPos > currentScrollPos) || currentScrollPos < 100);
       setPrevScrollPos(currentScrollPos);
     };
 
     const handleMouseMove = (e) => {
-      if (e.clientY <= 100) {
+      if (e.clientY <= 50) {
         setVisible(true);
       }
     };
