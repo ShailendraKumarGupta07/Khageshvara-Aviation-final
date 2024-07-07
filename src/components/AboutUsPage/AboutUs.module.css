@@ -23,15 +23,27 @@ body{
 
 }
 
-.aboutUs , .members{
+.aboutUs {
     display: flex;
     flex-direction: column;
     font-family: Manrope;
     justify-content: center;
     align-items: center;
     gap: 40px;
-    width: 100%;
+    width: 100vw;
+    height: 100%;
     padding: 60px 200px 60px 200px;
+}
+.members{
+    display: flex;
+    flex-direction: column;
+    font-family: Manrope;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    width: 100vw;
+    height: 180vh;
+    margin-top: 50px;
 }
 .heading{
     font-size:4.2rem;
@@ -41,8 +53,9 @@ body{
     }
 }
 .heading1 ,.co{
-    font-size:4.2rem;
+    font-size:4rem;
     text-align: center;
+    width: 50vw;
     span{
         color: rgb(252, 185, 0);
     }
@@ -58,27 +71,32 @@ body{
 .team_members{
     display: flex;
     gap:30px;
-
+    justify-content: center;
+    align-items: center;
+    width: 80dvw;
 }
 
 .members{
-    padding: 0 200px 60px 200px;
+    padding: 0 20px 60px 20px;
     .heading{
         margin-bottom: 30px;
     }
 }
 .members{
     display: flex;
+    width: 100vw;
 }
 .member{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background: linear-gradient(rgb(0, 29, 61) 0%, rgb(0, 53, 102) 100%);
+    box-sizing: border-box;
     padding: 50px;
     gap: 50px;
     color: white;
-    height: 110vh;
-    width: 50%;
+    height: 100%;
 }
 
 .member_image{
@@ -168,7 +186,7 @@ body{
 }
 @media screen and (max-width:410px) and (min-width:300px){
     .heading, .heading1, .co{
-        font-size: 2.5rem;
+        font-size: 2.2rem;
         width: 80vw;
     }
     .para{
@@ -185,13 +203,14 @@ body{
 
 /* media queries for member images  */
 
-@media screen and (max-width:1260px) and (min-width:800px){
+@media screen and (max-width:1300px) and (min-width:900px){
+    .members{
+        height: 200vh;
+    }
     .member_image{
-        height: 100%;
         img{
             border-radius: 40px 40px 0 0;
             width: 200px;
-            aspect-ratio: 250/300;
             object-fit: cover;
         }
     }
@@ -199,17 +218,21 @@ body{
         gap: 20px;
         padding: 0px;
         .about_member{
-                word-spacing: 0.1rem;
-                width: 40vw;
+                width: 30vw;
         }
     }
     .member_name{
         font-size: 2rem;
     }
 }
-@media screen and (max-width:800px) and (min-width:500px){
+
+@media screen and (max-width:900px) and (min-width:500px){
     .members{
         padding: 0 50px 60px 50px;
+        height: 100%;
+    }
+    .team_members{
+        flex-direction: column;
     }
     .member{
         flex-direction: column;
@@ -244,6 +267,10 @@ body{
 @media screen and (max-width:500px) and (min-width:300px){
     .members{
         padding: 0 50px 60px 50px;
+        height: 100%;
+    }
+    .team_members{
+        flex-direction: column;
     }
     .member{
         flex-direction: column;
@@ -287,7 +314,8 @@ body{
             border-radius: 20px 20px 0 0;
             width: 200px;
             height: 350px;
-            object-fit: scale-down;
+            object-fit: cover;
         }
     }
 }
+
