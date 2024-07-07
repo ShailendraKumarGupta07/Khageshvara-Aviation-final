@@ -99,8 +99,8 @@ const BusinessTeam = () =>{
             Meet <span>Our</span> Team
         </div>
         <div className={style.redirect_links}>
-            <a className={style.link} href="/about">Co-Founders</a>
-            <a className={style.link} href="/about/tech"> Tech Team</a>
+            <Link className={style.link} to="/about">Co-Founders</Link>
+            <Link className={style.link} to="/about/tech"> Tech Team</Link>
         </div>
       </div>
     </div>

@@ -63,8 +63,8 @@ const AboutUs = () => {
             Meet <span>Our</span> Team
         </div>
         <div className={style.redirect_links}>
-            <a className={style.link} href="/about/business">Business Strategic Team</a>
-            <a className={style.link} href="/about/tech"> Tech Team</a>
+            <Link className={style.link} to="/about/business">Business Strategic Team</Link>
+            <Link className={style.link} to="/about/tech"> Tech Team</Link>
         </div>
       </div>
     </div>

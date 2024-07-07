@@ -105,8 +105,8 @@ const TechTeam =() => {
            Meet <span>Our</span> Team
         </div>
         <div className={style.redirect_links}>
-            <a className={style.link} href="/about">Co-Founders</a>
-            <a className={style.link} href="/about/business"> Business Strategic Team</a>
+            <Link className={style.link} to="/about">Co-Founders</Link>
+            <Link className={style.link} to="/about/business"> Business Strategic Team</Link>
         </div>
       </div>
     </div>
