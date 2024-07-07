@@ -49,18 +49,18 @@ const Navbar = () => {
           <img src={logo} alt="Logo" />
         </div>
         <div className={styles.name}>
-          <a  href="/" className={styles.name}>KHAGHESHVARA</a>
+          <Link  to="/" className={styles.name}>KHAGHESHVARA</Link>
         </div>
 
         <div className={styles.list}>
           <div className={styles.listElement}>
-             <a className={styles.about} href="/about">About Us</a>
+             <Link className={styles.about} to="/about">About Us</Link>
           </div>
           <div className={styles.listElement}>
-            <a className={styles.technology} href="/technology">Technology</a>
+            <Link className={styles.technology} to="/technology">Technology</Link>
           </div>
           <div className={styles.listElement}>
-            <a className={styles.career} href="/career">Careers</a>
+            <Link className={styles.career} to="/career">Careers</Link>
           </div>
         </div>
 
@@ -69,16 +69,16 @@ const Navbar = () => {
           {isOpen && (
             <div className={styles.dropdown} onClick={disable}>
               <div className={styles.dropdownElement}>
-                <a className={styles.about} href="/">Home</a>
+                <Link className={styles.about} to="/">Home</Link>
               </div>
               <div className={styles.dropdownElement}>
-                <a className={styles.about} href="/about">About Us</a>
+                <Link className={styles.about} to="/about">About Us</Link>
               </div>
               <div className={styles.dropdownElement}>
-                <a className={styles.technology} href="/technology">Technology</a>
+                <Link className={styles.technology} to="/technology">Technology</Link>
               </div>
               <div className={styles.dropdownElement}>
-                <a className={styles.career} href="/career">Careers</a>
+                <Link className={styles.career} to="/career">Careers</Link>
               </div>
             </div>
           )}
