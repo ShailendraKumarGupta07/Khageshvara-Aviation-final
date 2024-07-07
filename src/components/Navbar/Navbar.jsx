@@ -49,7 +49,7 @@ const Navbar = () => {
           <img src={logo} alt="Logo" />
         </div>
         <div className={styles.name}>
-          <Link  to="/" className={styles.name}>KHAGHESHVARA</Link>
+          <Link  to="" className={styles.name}>KHAGHESHVARA</Link>
         </div>
 
         <div className={styles.list}>
@@ -69,7 +69,7 @@ const Navbar = () => {
           {isOpen && (
             <div className={styles.dropdown} onClick={disable}>
               <div className={styles.dropdownElement}>
-                <Link className={styles.about} to="/">Home</Link>
+                <Link className={styles.about} to="">Home</Link>
               </div>
               <div className={styles.dropdownElement}>
                 <Link className={styles.about} to="/about">About Us</Link>
