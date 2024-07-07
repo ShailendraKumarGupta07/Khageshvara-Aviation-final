@@ -7,9 +7,6 @@ import Vani from '../../assets/member_images/Vani-Sadadiwala.jpeg';
 import Madhav from '../../assets/member_images/Madhav Menon.png'
 import style from '../BusinesTeam/BusinessTeam.module.css'
 
-
-
-
 const TechTeam =() => {
   return (
     <>

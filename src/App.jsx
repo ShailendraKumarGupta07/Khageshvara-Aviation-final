@@ -61,7 +61,7 @@ function App() {
       <Navbar />
       <div className="container my-5">
         <Routes>
-          <Route exact path= "/" element={
+          <Route exact path= "/"  element={
             <div className="container my-5">
               <div ref={sectionRefs.navbar} style={{ display: "none" }}>
                 <Hero />
