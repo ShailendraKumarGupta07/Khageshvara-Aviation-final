@@ -4,13 +4,13 @@ import Video1 from "../../assets/videos/graph1.mp4"
 import data1 from "../../assets/mapImage.jpg"
 import icon1 from "../../assets/icon1.svg"
 import icon2 from "../../assets/logo2.svg"
-
+import map_video from "../../assets/videos/map_video.mp4"
 
 
 const Analytics = () => {
   return (
     <>
-    <div className={style.wrapper}>
+    {/* <div className={style.wrapper}>
         <div className={style.heading}>
             <div className={style.headin1}>REACH THE</div>
             <div className={style.heading2}>UNREACHABLE</div>
@@ -76,10 +76,15 @@ const Analytics = () => {
                 <div className={style.data2b}>
                     <video className={style.play} autoPlay muted width="1402px" height="1042px" speed="1" >
                         <source className={style.play_1} src={Video1} type="video/mp4" />
-                    </video>  
+                    </video>
                 </div>
             </div>
         </div>
+    </div> */}
+    <div className={style.analytics_dwrapper}>
+    <video className={style.map_Video} autoPlay loop muted preload="auto">
+        <source src ={map_video} type="video/mp4"/>
+    </video>
     </div>
     </>
   )
