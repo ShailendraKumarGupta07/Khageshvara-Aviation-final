@@ -564,6 +564,6 @@
 .map_Video{
     display: flex;
     width: 100vw;
-    height: 100dvh;
+    height: auto;
     object-fit: contain;
 }
