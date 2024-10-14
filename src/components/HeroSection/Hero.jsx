@@ -1,11 +1,14 @@
 import React from "react";
 import styles from "./Hero.module.css";
 import bgImage from "../../assets/herobgImage2.png";
+import topvideo from "../../assets/videos/top_video.mp4"
 
 const Hero = () => {
   return (
     <>
-      <div className={styles.wrapper}>
+
+      {/* use this if you need the image UI  */}
+      {/* <div className={styles.wrapper}>
         <img src={bgImage} alt="" className={styles.bgImage} />
         <div className={styles.content}>
           <div className={styles.textSection}>
@@ -21,6 +24,14 @@ const Hero = () => {
             <button className={styles.btn}>Join Our Revolution</button>
           </div>
         </div>
+      </div> */}
+
+
+      {/* Use this if you need the video UI  */}
+      <div className={styles.wrapper}>
+        <video className={styles.bgVideo} autoPlay loop muted preload="auto">
+                <source src ={topvideo} type="video/mp4"/>
+        </video>
       </div>
     </>
   );
