@@ -1,4 +1,4 @@
-.pageWrapper {
+/* .pageWrapper {
   height: 100dvh;
   width: 100vw;
   display: flex;
@@ -16,7 +16,6 @@
   color: rgb(252, 185, 0);
 }
 
-/* previous one */
 .content1{
   display: flex;
   justify-content: space-between;
@@ -64,7 +63,6 @@
   min-width: 400px;
 }
 
-/* new one */
 
 .content2{
   display: flex;
@@ -107,22 +105,12 @@
   border-bottom: 2px solid #d9d9d9;
   overflow: clip;
 }
-/* .bottomImage {
-  position: relative ;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100vw;
-  top: -8%;
-  border-bottom: 2px solid #d9d9d9;
-} */
+
 .bottomImage > video {
   width: 60vw;
   height: auto;
   min-width: 600px;
-  /* position: absolute; */
   object-fit: fill;
-  /* border: 1px solid red; */
 }
 .v1{
   margin-bottom: -100px;
@@ -132,10 +120,8 @@
   width: 60vw;
   height: auto;
   min-width: 600px;
-  /* position: absolute; */
 }
 
-/* Media Queries starts here  */
 @media screen and (max-width:1400px) and (min-width:1200px) {
   .heading{
     font-size:3.5rem ;
@@ -372,7 +358,6 @@
   }
 }
 
-/* new media queries  */
 
 @media screen and (max-width:1600px) and (min-width:1000px){
   .content1{
@@ -405,5 +390,322 @@
   .v1{
     margin-top: -200px;
     margin-bottom: -250px;
+  }
+} */
+
+
+.top_carousel_container{
+  height: 100%;
+  width: 100vw;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4%;
+  border-bottom: 1px solid #d9d9d9;
+  padding-bottom: 50px;
+}
+.heading {
+  font-size: 4.2rem;
+  margin-top: 2rem;
+  text-align: center  ;
+}
+.heading span {
+  color: rgb(252, 185, 0);
+}
+/* Carousel  */
+
+.carouselContainer_top_carousel {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  width: 80%;
+  height: 70%;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+}
+
+.left_top_carousel, .right_top_carousel{
+  position: absolute;
+  /* z-index: 1; */
+  background: rgba(0,0,0,0.2);
+  border: none;
+  cursor: pointer;
+  border-radius: 100%;
+}
+
+.btn_cont_top_carousel{
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+.left_top_carousel{
+  left: 1%;
+  top: 45%;
+
+}
+.right_top_carousel{
+  right:1%;
+  top: 45%;
+}
+
+.carousel_top_carousel {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  width: 80%;
+  height: 70%;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+}
+
+.cards_top_carousel {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  transition: transform 0.5s ease;
+}
+
+.card_top_carousel {
+  display: flex;
+  flex: 0 0 100%;
+  cursor: grab;
+}
+
+.card_top_carousel img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.change_top_carousel{
+  height: 30px;
+  width: 80px;
+  background:rgba(0,0,0,0.2);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 30px;
+  position: absolute;
+  z-index: 1;
+  bottom: 5%;
+  left: 46%;
+}
+.change_1_top_carousel, .change_2_top_carousel, .change_3_top_carousel{
+  height: 10px;
+  width: 10px;
+  border-radius: 100%;
+  background:rgba(0, 0, 0, 0.2);
+  border: none;
+}
+
+
+/* media queries  */
+
+
+@media screen and (max-width: 1400px) and (min-width:1000px ){
+  .card_top_carousel img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  .left_top_carousel,.right_top_carousel{
+    img{
+      height: 35px;
+      width: 35px;
+    }
+  }
+  .heading{
+    text-align: center;
+    font-size: 3.25rem;
+  }
+}
+@media screen and (max-width: 1000px) and (min-width:700px ){
+  .carousel_top_carousel {
+    width:100%;
+    height: 100%;
+    border-radius: 10px;
+  }
+  .cards_top_carousel {
+    display: flex;
+    height: auto;
+    width: 100%;
+  }
+  .card_top_carousel{
+    flex-direction: column;
+  }
+  .card_top_carousel img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .left_top_carousel,.right_top_carousel{
+    img{
+      height: 35px;
+      width: 35px;
+    }
+  }
+.change_top_carousel{
+    left: 44%;
+    bottom: 1%;
+    transform: scale(0.75);
+  }
+  .heading{
+    text-align: center;
+    font-size: 3.5rem;
+  }
+}
+@media screen and (max-width: 700px) and (min-width:500px ){
+  .carouselContainer_top_carousel{
+    padding-bottom: 0px;
+  }
+  .carousel_top_carousel {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+  }
+  .cards_top_carousel {
+    display: flex;
+    height: 100%;
+    width: 100%;
+  }
+  .card_top_carousel{
+    flex-direction: column;
+  }
+  .card_top_carousel img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  .left_top_carousel,.right_top_carousel{
+    img{
+      height: 35px;
+      width: 35px;
+    }
+  }
+.change_top_carousel{
+    left: 35%;
+    bottom: 1%;
+    transform: scale(0.75);
+  }
+  .heading{
+    text-align: center;
+    font-size: 2.5rem!important;
+    margin-top: 0;
+  }
+}
+@media screen and (max-width: 500px) and (min-width:400px ){
+  .carouselContainer_top_carousel{
+    padding-bottom: 0px;
+  }
+  .carousel_top_carousel {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+  }
+  .cards_top_carousel{
+    display: flex;
+    height: 80vh;
+    width: 80vw;
+  }
+  .card_top_carousel{
+    flex-direction: column;
+    width: 80vw;
+    height: 70vh;
+  }
+  .card_top_carousel img {
+    width: 80vw;
+    height: 30vh;
+    object-fit: cover;
+  }
+  .left_top_carousel,.right_top_carousel{
+    img{
+      height: 35px;
+      width: 35px;
+    }
+  }
+
+.change_top_carousel{
+    left: 39%;
+    bottom: 1%;
+    transform: scale(0.6);
+  }
+  .heading{
+    margin-top: 0;
+    text-align: center;
+    font-size: 2.5rem!important;
+  }
+}
+@media screen and (max-width: 400px) and (min-width:300px ){
+  .carouselContainer_top_carousel{
+    padding-bottom: 0px;
+  }
+  .carousel_top_carousel {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+  }
+  .cards_top_carousel{
+    display: flex;
+    height: 30vh;
+    width: 80vw;
+  }
+  .card_top_carousel{
+    flex-direction: column;
+    width: 80vw;
+    height: 30vh;
+  }
+  .card_top_carousel img {
+    width: 80vw;
+    height: 20vh;
+    object-fit: scale-down;
+    transform: scale(1.1);
+  }
+  .left_top_carousel,.right_top_carousel{
+    img{
+      height: 35px;
+      width: 35px;
+    }
+  }
+
+.change_top_carousel{
+    left: 39%;
+    bottom: 1%;
+    transform: scale(0.6);
+  }
+  .heading{
+    margin-top: 0;
+    text-align: center;
+    font-size: 2.5rem!important;
+  }
+}
+
+@media screen and (max-width:2500px) and (min-width:700px){
+  .at_low_media_queries{
+    display: none;
+  }
+}
+@media screen and (max-width:700px) and (min-width:250px){
+  .at_low_media_queries{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .cards_top_carousel{
+    display: none;
+  }
+  .change_top_carousel{
+    display: none;
   }
 }
