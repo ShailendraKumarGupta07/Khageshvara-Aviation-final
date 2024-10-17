@@ -81,10 +81,16 @@ const Analytics = () => {
             </div>
         </div>
     </div> */}
-    <div className={style.analytics_dwrapper}>
-    <video className={style.map_Video} autoPlay loop muted preload="auto">
-        <source src ={map_video} type="video/mp4"/>
-    </video>
+    <div className={style.analytics_wrapper}>
+            <div className={style.heading}>
+                    <div className={style.heading1}>REACH THE</div>
+                    <div className={style.heading2}>UNREACHABLE</div>
+            </div>
+            <div className={style.map_video_container}>
+                <video className={style.map_Video} autoPlay loop muted preload="auto">
+                    <source src ={map_video} type="video/mp4"/>
+                </video>
+            </div>
     </div>
     </>
   )

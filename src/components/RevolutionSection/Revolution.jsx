@@ -15,26 +15,31 @@ import EVTOL2 from "../../assets/videos/Features.mp4"
 const Revolution = () =>{
   return (
     <>
-    {/* <div className={style.contentwrapper}>
+    <div className={style.contentwrapper}>
         <div className={style.heading}>
             <span className={style.heading_1}>INDIA'S AIR TAXI</span>
             <span className={style.heading_2}>REVOLUTION</span>
-            <span className={style.heading_3}>100+ km Range, Affordable, Quiet.</span>
         </div>
         <div className={style.Evtol_video}>
             <video className={style.v2} autoPlay loop muted>
                 <source src={EVTOL2} type="video/mp4"/>
             </video>
         </div>
-    </div> */}
-
-    <div className={style.contentwrapper}>
-        <div className={style.Video_Container}>
-            <video className={style.v2} autoPlay loop muted>
-                <source src={EVTOL2} type="video/mp4"/>
-            </video>
-        </div>
     </div>
+{/*
+    <div className={style.contentwrapper}>
+        <div className={style.revolution_header}>
+            <div className={style.heading}>
+                <span className={style.heading_1}>INDIA'S AIR TAXI</span>
+                <span className={style.heading_2}>REVOLUTION</span>
+            </div>
+            <div className={style.Video_Container}>
+                <video className={style.v2} autoPlay loop muted>
+                    <source src={EVTOL2} type="video/mp4"/>
+                </video>
+            </div>
+        </div>
+    </div> */}
     </>
   )
 }
