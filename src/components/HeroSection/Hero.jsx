@@ -1,4 +1,4 @@
-import React from "react";
+import React ,{useState} from "react";
 import styles from "./Hero.module.css";
 import bgImage from "../../assets/herobgImage2.png";
 import topvideo from "../../assets/videos/top_video.mp4"
@@ -33,6 +33,7 @@ const Hero = () => {
                 <source src ={topvideo} type="video/mp4"/>
         </video>
       </div>
+
     </>
   );
 };

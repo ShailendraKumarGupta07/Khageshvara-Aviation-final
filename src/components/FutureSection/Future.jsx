@@ -25,17 +25,20 @@ const Future = () => {
   const setCurrentSlide = (index) =>{
     setCurrentIndex(index);
   };
-  
-  useEffect(() => {
-    const intervalId = setInterval(() => {
-      setCurrentIndex((prevIndex) =>
-        prevIndex === 2 ? 0 : prevIndex + 1
-      );
-    }, 3500);
 
-    return () => clearInterval(intervalId);
-  }, []);
 
+  //Logic for auto carousel starts
+  // useEffect(() => {
+  //   const intervalId = setInterval(() => {
+  //     setCurrentIndex((prevIndex) =>
+  //       prevIndex === 2 ? 0 : prevIndex + 1
+  //     );
+  //   }, 3500);
+
+  //   return () => clearInterval(intervalId);
+  // }, []);
+
+  //logic ends here
 
   return (
     <>
@@ -83,7 +86,7 @@ const Future = () => {
               </div>
             </div>
             <div className={style.card}>
-              <img src={img3} alt="Image 3" /> 
+              <img src={img3} alt="Image 3" />
               <div className={style.description}>
                 <p className={style.head}>Military</p>
                 <p>Description</p>

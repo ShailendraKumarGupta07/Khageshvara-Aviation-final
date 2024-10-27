@@ -98,7 +98,7 @@ path.two {
     }
 }
 
-@media screen and (max-width:1400px) and (min-width:0px){
+@media screen and (max-width:1000px) and (min-width:0px){
     .scroll_button{
         display: none;
     }
