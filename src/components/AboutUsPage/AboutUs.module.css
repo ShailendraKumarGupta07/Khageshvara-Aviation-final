@@ -42,8 +42,8 @@ body{
     align-items: center;
     gap: 40px;
     width: 100vw;
-    height: 180vh;
-    margin-top: 50px;
+    height: 150vh;
+    /* margin-top: 50px; */
 }
 .heading{
     font-size:4.2rem;
@@ -73,7 +73,7 @@ body{
     gap:30px;
     justify-content: center;
     align-items: center;
-    width: 80dvw;
+    width: 100vw;
 }
 
 .members{
@@ -81,6 +81,16 @@ body{
     .heading{
         margin-bottom: 30px;
     }
+}
+.about_member{
+    margin-block: 2rem;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: column;
+}
+.member_position{
+    text-align: center;
 }
 .members{
     display: flex;
@@ -93,33 +103,37 @@ body{
     align-items: center;
     background: linear-gradient(rgb(0, 29, 61) 0%, rgb(0, 53, 102) 100%);
     box-sizing: border-box;
-    padding: 50px;
-    gap: 50px;
     color: white;
     height: 100%;
+    max-height: 75dvh;
+  width: 45vw;
 }
 
 .member_image{
-    height: 100%;
-    display: flex;
-    justify-content: center;
+    height: 250px;
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  width: 200px;
     img{
         border-radius: 40px 40px 0 0;
-        height: 300px;
-        width: 250px;
-        object-fit: cover;
+    height: 250px;
+    width: 200px;
+    object-fit: cover;
     }
 }
 .member_info{
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    padding: 30px;
+    /* gap: 20px; */
+    /* padding: 30px; */
     height: 100%;
+    width: 80%;
 
 }
 .member_name{
     font-size: 2.3rem;
+    text-align: center;
 }
 
 /* Scroll Animation */
@@ -146,7 +160,7 @@ body{
     justify-content: center;
     align-items: center;
     gap: 50px;
-    padding: 25px;
+    /* padding: 25px; */
     width: 80vw;
 }
 .link{
@@ -316,6 +330,11 @@ body{
             height: 350px;
             object-fit: cover;
         }
+    }
+}
+@media screen and (max-height: 700px) and (min-width:1000px){
+    .member{
+        max-height: none;
     }
 }
 
