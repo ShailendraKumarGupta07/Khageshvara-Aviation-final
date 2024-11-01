@@ -103,7 +103,9 @@ body{
 .member_name{
     font-size: 2.3rem;
 }
-
+.about_member{
+    text-align:justify;
+}
 /* Scroll Animation */
 .heading1, .co,.redirect_links,  .member{
     animation: CSSscrollReveal ease-in-out both;
