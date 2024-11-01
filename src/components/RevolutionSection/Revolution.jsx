@@ -17,7 +17,7 @@ const Revolution = () =>{
     <>
     <div className={style.contentwrapper}>
         <div className={style.heading}>
-            <span className={style.heading_1}>INDIA'S AIR TAXI</span>
+            <span className={style.heading_1}>INDIA'S FLIGHT</span>
             <span className={style.heading_2}>REVOLUTION</span>
         </div>
         <div className={style.Evtol_video}>
