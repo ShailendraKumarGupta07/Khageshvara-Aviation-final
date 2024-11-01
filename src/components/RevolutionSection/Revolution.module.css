@@ -22,9 +22,7 @@
     font-size: 4.25rem;
     text-align: center;
 }
-.heading_1, .heading_2{
-    text-align: center;
-}
+
 .heading .heading_2{
     color: rgb(252, 185, 0);
     width: 100%;
