@@ -4,7 +4,7 @@ import Video1 from "../../assets/videos/graph1.mp4"
 import data1 from "../../assets/mapImage.jpg"
 import icon1 from "../../assets/icon1.svg"
 import icon2 from "../../assets/logo2.svg"
-import map_video from "../../assets/videos/map_video.mp4"
+import map_video from "../../assets/videos/MAP_video.mp4"
 
 
 const Analytics = () => {
