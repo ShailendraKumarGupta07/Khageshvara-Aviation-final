@@ -34,8 +34,8 @@
     align-items: center;
 }
 .v2{
-    width: 60vw;
-    height: 70vh;
+    width: 70vw;
+    height: auto;
     object-fit: fill;
 }
 
