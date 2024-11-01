@@ -629,6 +629,7 @@
         font-size: 2.5rem;
         display: flex;
         gap: 10px;
+        flex-direction:column;
         margin-top: 1.5rem;
     }
 }
