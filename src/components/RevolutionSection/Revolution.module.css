@@ -283,7 +283,7 @@
         margin-top: 2%;
     }
 }
-@media screen and (max-width: 800px) and (min-width: 500px){
+@media screen and (max-width: 800px) and (min-width: 550px){
     .Evtol_video{
         height: 100%;
         width: 100%;
@@ -297,7 +297,7 @@
         margin-top: 2%;
     }
 }
-@media screen and (max-width: 500px) and (min-width: 300px){
+@media screen and (max-width: 550px) and (min-width: 300px){
     .Evtol_video{
         height: 100%;
         width: 100%;
@@ -309,6 +309,10 @@
         height: auto;
         width: 100vw;
         margin-top: 2%;
+    }
+    .heading{
+        flex-direction:column;
+        gap: 10px;
     }
 }
 
