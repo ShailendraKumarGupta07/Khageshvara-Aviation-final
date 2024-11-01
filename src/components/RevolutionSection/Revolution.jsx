@@ -17,8 +17,8 @@ const Revolution = () =>{
     <>
     <div className={style.contentwrapper}>
         <div className={style.heading}>
-            <span className={style.heading_1}>INDIA'S FLIGHT</span>
-            <span className={style.heading_2}>REVOLUTION</span>
+            <div className={style.heading_1}>INDIA'S FLIGHT</div>
+            <div className={style.heading_2}>REVOLUTION</div>
         </div>
         <div className={style.Evtol_video}>
             <video className={style.v2} autoPlay loop muted>
