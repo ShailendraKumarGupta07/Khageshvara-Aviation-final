@@ -19,56 +19,57 @@
     font-size: 1.16rem;
     font-weight: bold;
 }
-.supportorg, .grantsorg{
-    display: flex;
-    height: 102px;
+.supportorg{
+    height: auto;
     width: 100vw;
-    justify-content: center;
-    gap: 30px;
-    position: relative;
-    flex-wrap: nowrap;
-    align-items: center;
-    object-position: center;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,2fr);
+    row-gap: 2rem;
+
 }
 .grantsorg{
-    gap: 250px;
+    height: auto;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(1,1fr);
 }
 .supportedby img, .Grantsby img{
     object-fit: scale-down;
-    width: 9vw;
-    height: 102px;
+    width: 11vw;
+    height: 12vh;
     image-rendering: auto;
-
 }
 
 
 /* Media Queries  */
 
-@media screen and (max-width: 1000px) and (min-width:750px ){
+@media screen and (max-width: 1000px) and (min-width:800px ){
     .supportedby, .Grantsby{
         font-size: 1rem;
-    }
-    .grantsorg{
-        gap: 150px;
     }
 }
-@media screen and (max-width: 750px) and (min-width:600px ){
+@media screen and (max-width: 800px) and (min-width:600px ){
     .supportedby, .Grantsby{
         font-size: 1rem;
     }
     .grantsorg{
-        gap: 100px;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,2fr);
+        row-gap: 2rem   ;
     }
     .supportorg{
-        gap: 20px;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(3,2fr);
     }
-    .supportedby img, .Grantsby img{
+    /* .supportedby img, .Grantsby img{
         object-fit: scale-down;
         width: 4.5em;
         height: 90px;
         image-rendering: auto;
 
-    }
+    } */
 }
 
 @media screen and (max-width: 600px) and (min-width:400px ){
@@ -79,8 +80,10 @@
         font-size: 1rem;
     }
     .grantsorg{
-        flex-direction: column;
+        display: grid;
         padding: 30px;
+        grid-template-columns: 0.5fr 0.5fr;
+        grid-template-rows: 1fr 1fr;
         gap: 6px;
         height: 100%;
     }
@@ -94,7 +97,7 @@
     }
     .supportedby img, .Grantsby img{
         object-fit: scale-down;
-        width: 9em;
+        width: 8em;
         height: 102px;
         image-rendering: auto;
     }
@@ -107,9 +110,11 @@
         font-size: 1rem;
     }
     .grantsorg{
-        flex-direction: column;
+        display: grid;
         padding: 30px;
-        gap: 6px;
+        grid-template-columns: 0.5fr 0.5fr;
+        grid-template-rows: 0.5fr 0.5fr;
+        gap: 3px;
         height: 100%;
     }
     .supportorg{
@@ -123,10 +128,10 @@
     .supportedby img, .Grantsby img{
         object-fit: scale-down;
         width: 6em;
-        height: 92px;
+        height: 82px;
         image-rendering: auto;
     }
     .Grantsby img{
-        width: 8em;
+        width: 6em;
     }
 }

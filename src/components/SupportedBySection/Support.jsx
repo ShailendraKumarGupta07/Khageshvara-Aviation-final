@@ -9,6 +9,9 @@ import DLABS from "../../assets/supportedbysection/dlabs.png"
 import min from "../../assets/supportedbysection/min_st.svg"
 import nidhiprayas from "../../assets/supportedbysection/nidhiprayas.webp"
 import startupindia from "../../assets/supportedbysection/startupindia.webp"
+import meity from "../../assets/supportedbysection/MeitY.png"
+import TEC from "../../assets/supportedbysection/BITS-TEC_Logo.png"
+import SRIX from "../../assets/supportedbysection/SRIX.jpg"
 
 const Support = () => {
   return (
@@ -35,6 +38,12 @@ const Support = () => {
                 <div className="org">
                     <img src={DLABS} alt="" />
                 </div>
+                <div className="org">
+                    <img src={TEC} alt="" />
+                </div>
+                <div className="org">
+                    <img src={SRIX} alt="" />
+                </div>
             </div>
         </div>
         <div className={style.Grantsby}>
@@ -48,6 +57,9 @@ const Support = () => {
                 </div>
                 <div className="Span">
                     <img src={startupindia} alt="" />
+                </div>
+                <div className="Span">
+                    <img src={meity} alt="" />
                 </div>
             </div>
         </div>
