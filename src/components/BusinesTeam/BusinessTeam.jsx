@@ -1,10 +1,11 @@
 import React, { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import topimage from '../../assets/background_About_page.jpg';
-import VEDANSH_AGGARWAL from '../../assets/member_images/VEDANSH AGGARWAL.jpg';
-import EliseReyes from '../../assets/member_images/Elise Reyes.jpeg';
-import Piyaal from '../../assets/member_images/Piyal Chaudhary.jpg';
-import Swasti from '../../assets/member_images/Swasti Dubey.jpeg';
+import VEDANSH_AGGARWAL from '../../assets/member_images/VEDANSH AGGARWAL.png';
+import EliseReyes from '../../assets/member_images/Elise Reyes.png';
+import Piyaal from '../../assets/member_images/Piyal Chaudhary.png';
+import Swasti from '../../assets/member_images/Swasti Dubey.png';
+import Ujjawal from '../../assets/member_images/Ujjawal Kumar.png';
 import style from '../BusinesTeam/BusinessTeam.module.css';
 
 const BusinessTeam = () => {
@@ -41,8 +42,6 @@ const BusinessTeam = () => {
                 <img src={VEDANSH_AGGARWAL} alt="Vedansh Aggarwal"/>
               </div>
               <div className={style.member_info}>
-                <div className={style.member_name}>Vedansh Aggarwal</div>
-                <div className={style.member_position}>Business Development Lead</div>
                 <div className={style.about_member}>
                   <p>A diligent third-year Bachelor's student at BITS Pilani, serving as the Business Development Lead at Khageshvara Aviation Technology Private Limited. Demonstrating a strategic mindset, this individual plays a crucial role in propelling company growth and cultivating essential partnerships, showcasing exemplary leadership and business acumen.</p>
                   <ul>
@@ -58,8 +57,6 @@ const BusinessTeam = () => {
                 <img src={EliseReyes} alt="Elise Reyes"/>
               </div>
               <div className={style.member_info}>
-                <div className={style.member_name}>Elise Reyes</div>
-                <div className={style.member_position}>Social Impact + Sustainability Advisor</div>
                 <div className={style.about_member}>
                   <p>Althea Reyes is the Social Impact + Sustainability Advisor at Khageshvara. In her day job, she is a Research Analyst at Corporate Knights, a Toronto-based sustainability-focused investor research firm. She possesses more than three years of experience in helping educators, government leaders, nonprofits, and companies realize their impact and sustainability strategies.</p>
                   <p>Advising business development on incorporating sustainability and the SDGs across component procurement, strategy, and product development.</p>
@@ -71,10 +68,8 @@ const BusinessTeam = () => {
                 <img src={Swasti} alt="Swasti Dubey"/>
               </div>
               <div className={style.member_info}>
-                <div className={style.member_name}>Swasti Dubey</div>
-                <div className={style.member_position}>Marketing and Content Strategy Lead</div>
                 <div className={style.about_member}>
-                  <p>Develop marketing strategies and oversee content creation to drive brand growth and engagement.</p>
+                  <p>As a Marketing and Content Lead, I assist in strategic decision-making and optimize operational processes. I analyze data to provide insights and handle multiple responsibilities with adaptability. I embody and promote the brand's values and possess in-depth product knowledge. I engage in public relations, actively promote the brand on social media, and represent the brand at events. I interact with customers, gather feedback, and generate leads, ensuring effective brand presence and loyalty.</p>
                 </div>
               </div>
             </div>
@@ -83,14 +78,18 @@ const BusinessTeam = () => {
                 <img src={Piyaal} alt="Piyal Chaudhary"/>
               </div>
               <div className={style.member_info}>
-                <div className={style.member_name}>Piyal Chaudhary</div>
-                <div className={style.member_position}>Strategic Collaboration Lead</div>
                 <div className={style.about_member}>
-                  <p>Plan and strategize the collaborations of K.A.T.</p>
-                  <ul>
-                    <li>Understand and integrate all verticals.</li>
-                    <li>Contact companies for procurement</li>
-                  </ul>
+                  <p>As the Strategic Collaboration Lead at K.A.T., I am responsible for planning and strategizing partnerships to support the company’s growth and innovation. I work to understand and integrate all verticals, ensuring seamless alignment across departments. Additionally, I handle outreach to companies for procurement needs and foster strategic collaborations that add value to our operations and mission.</p>
+                </div>
+              </div>
+            </div>
+            <div className={style.member}>
+              <div className={style.member_image}>
+                <img src={Ujjawal} alt="Ujjawal Kumar"/>
+              </div>
+              <div className={style.member_info}>
+                <div className={style.about_member}>
+                  <p> As a Design Lead, I plan and manage timelines for design projects to ensure the timely release of marketing and social media visuals. I oversee the creation of all visual assets, including posters, web pages, app interfaces, and other materials for workshops, collaborations, competitions, and marketing campaigns. I direct the creative process, ensuring that each design aligns with strategic goals and consistently reflects the brand’s visual identity. Through this role, I ensure that all design outputs maintain a cohesive, impactful presence across all platforms and initiatives.</p>
                 </div>
               </div>
             </div>

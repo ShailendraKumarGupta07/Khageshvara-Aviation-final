@@ -33,10 +33,10 @@ const AboutUs = () => {
                 <img src={Ritvik}/>
               </div>
               <div className={style.member_info}>
-                <div className={style.member_name}>
+                {/* <div className={style.member_name}>
                   Ritivik Yadav
                 </div>
-                <div className={style.member_position}> CEO & Co-Founder </div>
+                <div className={style.member_position}> CEO & Co-Founder </div> */}
                 <div className={style.about_member}>
                   <div>In the tapestry of my life, aerospace has been a continuous thread, woven since childhood. Drones and UAVs were my youthful muses. Amid the intricate fabric of my engineering life, destiny led me to contribute to Uber Elevate's Air Taxi concept—a juncture that propelled me into a love affair with the skies, echoing the mythical journey of Khageshvara.</div>
                   <div>My key roles are majorly designing and analyzing components of our EVTOL , along with parts procurement for the same. </div>
@@ -48,10 +48,10 @@ const AboutUs = () => {
                 <img src={Shayandeep}/>
               </div>
               <div className={style.member_info}>
-                <div className={style.member_name}>
+                {/* <div className={style.member_name}>
                   Shayandeep Das
                 </div>
-                <div className={style.member_position}>Co-Founder </div>
+                <div className={style.member_position}>Co-Founder </div> */}
                 <div className={style.about_member}>
                   <div>Shayandeep Das is one of K.A.T's co-founders. He is currently a Master's in Health Economics and Statistics at Oxford University and a Data Analyst. He was formerly a Board Member of a nonprofit. He is passionate about machine learning and the electrification of drones. Let's together Reach the Unreachable.</div>
                   <div>Responsible for the Business Development and Strategy of the K.A.T </div>
@@ -63,8 +63,8 @@ const AboutUs = () => {
             Meet <span>Our</span> Team
         </div>
         <div className={style.redirect_links}>
-            <Link className={style.link} to="/about/business">Business Strategic Team</Link>
             <Link className={style.link} to="/about/tech"> Tech Team</Link>
+            <Link className={style.link} to="/about/business">Business Strategic Team</Link>
         </div>
       </div>
     </div>

@@ -80,7 +80,7 @@ body{
     gap: 50px;
     color: white;
     height: 100%;
-    width:100%;
+    width:60vw;
 }
 
 .member_image{
@@ -89,7 +89,7 @@ body{
         border-radius: 40px 40px 0 0;
         height: 300px;
         width: 250px;
-        object-fit: cover;
+        object-fit: contain;
     }
 }
 .member_info{

@@ -2,8 +2,6 @@ import React, { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import topimage from '../../assets/background_About_page.jpg';
 import Anh_Nguyen from '../../assets/member_images/Anh Nguyen.png';
-import Deepanshu from '../../assets/member_images/Deepanshu Jain.jpg';
-import Vani from '../../assets/member_images/Vani-Sadadiwala.jpeg';
 import Madhav from '../../assets/member_images/Madhav Menon.png';
 import style from '../BusinesTeam/BusinessTeam.module.css';
 
@@ -41,8 +39,6 @@ const TechTeam = () => {
                 <img src={Anh_Nguyen} alt="Anh Nguyen"/>
               </div>
               <div className={style.member_info}>
-                <div className={style.member_name}>Anh Nguyen</div>
-                <div className={style.member_position}>Data & Analytics Lead</div>
                 <div className={style.about_member}>
                   <p>With a foundation in public services and advanced skills with analytics, I aspire to harness data to refine operations and strategy at K.A.T. My focus lies in utilizing analytical tools and models to thoughtfully engage with challenges, ensuring our business navigates the present and future with precision and foresight.</p>
                   <ul>
@@ -56,45 +52,11 @@ const TechTeam = () => {
             </div>
             <div className={style.member}>
               <div className={style.member_image}>
-                <img src={Deepanshu} alt="Deepanshu Jain"/>
-              </div>
-              <div className={style.member_info}>
-                <div className={style.member_name}>Deepanshu Jain</div>
-                <div className={style.member_position}>Electronics Circuital Design Lead</div>
-                <div className={style.about_member}>
-                  <ul>
-                    <li>BLDC Motors</li>
-                    <li>Thermionic Circuital Design</li>
-                    <li>Research</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div className={style.member}>
-              <div className={style.member_image}>
                 <img src={Madhav} alt="Madhav Menon"/>
               </div>
               <div className={style.member_info}>
-                <div className={style.member_name}>Madhav Menon</div>
-                <div className={style.member_position}>Propulsion Systems</div>
                 <div className={style.about_member}>
-                  <p>Provide thrust and control the EVTOL requires for various mission phases. Design, develop and test various electro-mechanical systems needed for the propulsion system.</p>
-                </div>
-              </div>
-            </div>
-            <div className={style.member}>
-              <div className={style.member_image}>
-                <img src={Vani} alt="Vani Sadadiwala"/>
-              </div>
-              <div className={style.member_info}>
-                <div className={style.member_name}>Vani Sadadiwala</div>
-                <div className={style.member_position}>Avionics Engineer</div>
-                <div className={style.about_member}>
-                  <ul>
-                    <li>Structures</li>
-                    <li>Analysis</li>
-                    <li>Research</li>
-                  </ul>
+                  <p>As the Propulsion Team Lead, I am responsible for providing the necessary thrust and control for the EVTOL across all mission phases. I lead the design, development, and testing of various electro-mechanical systems essential to the propulsion system, ensuring reliable performance and mission success. This involves overseeing the creation and integration of advanced propulsion technologies to achieve precise control and efficiency throughout each stage of flight.</p>
                 </div>
               </div>
             </div>
