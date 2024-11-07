@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import topimage from '../../assets/background_About_page.jpg';
 import Anh_Nguyen from '../../assets/member_images/Anh Nguyen.png';
 import Madhav from '../../assets/member_images/Madhav Menon.png';
+import Tashif from '../../assets/member_images/Tashif.png';
 import style from '../BusinesTeam/BusinessTeam.module.css';
 
 const TechTeam = () => {
@@ -60,6 +61,16 @@ const TechTeam = () => {
                 </div>
               </div>
             </div>
+            <div className={style.member}>
+              <div className={style.member_image}>
+                <img src={Tashif} alt="Tashif Syed Ali"/>
+              </div>
+              <div className={style.member_info}>
+                <div className={style.about_member}>
+                  <p>As the Strategic Aeropropulsion Lead, I oversee the propulsion system design, ensuring both efficiency and regulatory compliance, while focusing on aeroacoustic modeling for noise reduction. I manage system integration, conduct performance testing, and continually optimize propulsion efficiency. Collaborating with engineering teams, I ensure seamless integration of propulsion and noise control systems. Additionally, I prepare detailed technical drawings, propulsion system specifications, and topographical maps to align with industry standards and customer requirements. I document noise reduction processes and testing outcomes comprehensively, providing critical insights to support ongoing and future projects.</p>
+                </div>
+              </div>
+            </div>
           </div>
           <div className={style.heading1}>
             Meet <span>Our</span> Team
@@ -67,6 +78,7 @@ const TechTeam = () => {
           <div className={style.redirect_links}>
             <Link className={style.link} to="/about">Co-Founders</Link>
             <Link className={style.link} to="/about/business">Business Strategic Team</Link>
+            <Link className={style.link} to="/about/mentors">Mentors</Link>
           </div>
         </div>
       </div>

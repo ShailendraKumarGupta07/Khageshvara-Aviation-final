@@ -191,7 +191,7 @@ body{
             border-radius: 40px 40px 0 0;
             width: 200px;
             aspect-ratio: 250/300;
-            object-fit: cover;
+            object-fit: contain;
         }
     }
     .member_info{
@@ -222,7 +222,7 @@ body{
             border-radius: 40px 40px 0 0;
             width: 250px;
             height: 300px;
-            object-fit: cover;
+            object-fit: contain;
         }
     }
     .member_info{
@@ -257,7 +257,7 @@ body{
             border-radius: 40px 40px 0 0;
             width: 250px;
             height: 300px;
-            object-fit: cover;
+            object-fit: contain;
         }
     }
     .member_info{
@@ -286,7 +286,7 @@ body{
             border-radius: 20px 20px 0 0;
             width: 200px;
             height: 350px;
-            object-fit: cover;
+            object-fit: contain;
         }
     }
 }

@@ -15,6 +15,7 @@ import TechTeam from "./components/TechTeam/TechTeam";
 import "./App.css";
 import Technology from "./components/TechnologyPage/Technology";
 import Career from "./components/Career/Career";
+import MentorsPage from "./components/MentorsPage/MentorsPage";
 
 function App() {
   const sectionRefs = {
@@ -117,6 +118,7 @@ function App() {
           <Route exact path="/career" element={<Career/>} />
           <Route exact path="/about/business" element={<BusinessTeam/>}></Route>
           <Route exact path="/about/tech" element={<TechTeam/>}></Route>
+          <Route exact path="/about/mentors" element={<MentorsPage/>}></Route>
         </Routes>
       </div>
       <div ref={sectionRefs.support} style={{ display: "none" }}>

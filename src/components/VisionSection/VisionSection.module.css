@@ -484,7 +484,7 @@
 .card_top_carousel img {
   width: 100%;
   height: auto;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .change_top_carousel{

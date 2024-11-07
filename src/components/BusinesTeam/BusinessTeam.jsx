@@ -99,7 +99,8 @@ const BusinessTeam = () => {
           </div>
           <div className={style.redirect_links}>
             <Link className={style.link} to="/about">Co-Founders</Link>
-            <Link className={style.link} to="/about/tech">Tech Team</Link>
+            <Link className={style.link} to="/about/tech">Technical Team</Link>
+            <Link className={style.link} to="/about/mentors">Mentors</Link>
           </div>
         </div>
       </div>
